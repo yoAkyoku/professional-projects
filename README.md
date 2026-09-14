@@ -1,5 +1,7 @@
 # Professional Project Case Studies
 
+[繁體中文](README.zh-TW.md)
+
 Commercial software engineering case studies from full-time work, freelance projects, and client engagements.
 
 This repository focuses on selected features and engineering decisions rather than complete source code:
@@ -36,7 +38,7 @@ Selected features from a multi-store POS, inventory, manufacturing, finance and 
 Legacy modernization · Domain modeling · BOM · Inventory · Manufacturing ·
 Multi-tenancy · POS-to-CRM integration · Reliability
 
-[View Case Study](./projects/pos-erp-crm/)
+[View Case Study](./projects/pos-erp-crm/README.md)
 
 ### Multi-tenant AI Customer Service
 
@@ -46,7 +48,7 @@ LINE-based AI customer service with LangGraph, RAG and hybrid retrieval.
 AI Agent · RAG · PostgreSQL · Vector Search · BM25 · LINE ·
 Knowledge Base · Human Escalation
 
-[View Case Study](./projects/ai-customer-service/)
+[View Case Study](./projects/ai-customer-service/README.md)
 
 ### Memoa AI Voice Agent
 
@@ -56,7 +58,7 @@ Realtime voice companion and care platform with STT, LLM and TTS.
 Voice AI · WebSocket · Agent Runtime · Memory · Privacy · Search ·
 Reconnect Handling
 
-[View Case Study](./projects/memoa-ai-agent/)
+[View Case Study](./projects/memoa-ai-agent/README.md)
 
 ### Smart Travel Platform
 
@@ -66,7 +68,7 @@ Travel operations and dispatch platform for staff, drivers and customers.
 Next.js · Expo · Dispatch · GPS · Mobile · Authentication ·
 Order Lifecycle · AI Assistance
 
-[View Case Study](./projects/smart-travel/)
+[View Case Study](./projects/smart-travel/README.md)
 
 ### Factory Pro Chinese
 
@@ -76,7 +78,7 @@ Multi-tenant learning platform for factory workers and enterprise administrators
 Next.js · NestJS · PostgreSQL · Learning Platform · Analytics ·
 OCR · Speech · Import Workflows
 
-[View Case Study](./projects/factory-pro-chinese/)
+[View Case Study](./projects/factory-pro-chinese/README.md)
 
 ## Platform Engineering
 
@@ -84,7 +86,7 @@ OCR · Speech · Import Workflows
 
 Shared search and web-content infrastructure used by multiple AI applications.
 
-[View Case Study](./platforms/shared-ai-search/)
+[View Case Study](./platforms/shared-ai-search/README.md)
 
 ## How to Read a Case Study
 

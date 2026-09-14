@@ -1,11 +1,11 @@
 # Memoa AI Voice Agent
 
+[繁體中文](README.zh-TW.md)
+
 **Period:** 2026/05 – Present<br>
 **Type:** Commercial / Full-time<br>
 **Role:** Full-stack / AI Application Engineer<br>
 **Focus:** Realtime Voice Agent · WebSocket · STT → LLM → TTS · Privacy
-
-> 即時語音陪伴與照護平台；本頁聚焦語音 Agent Runtime、連線恢復與資料生命週期。
 
 ## 1. Overview
 

@@ -1,11 +1,11 @@
 # Multi-tenant AI Customer Service
 
+[繁體中文](README.zh-TW.md)
+
 **Period:** 2026/05 – Present<br>
 **Type:** Commercial / Full-time<br>
 **Role:** AI Application / Backend Engineer<br>
 **Focus:** LangGraph · RAG · Hybrid Retrieval · LINE · Tenant Isolation
-
-> 以 LINE 為入口的多租戶 AI 客服；本頁聚焦 Agent、RAG、知識檢索與人工轉接流程。
 
 ## 1. Overview
 

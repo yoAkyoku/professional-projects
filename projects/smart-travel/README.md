@@ -1,11 +1,11 @@
 # Smart Travel Platform
 
+[繁體中文](README.zh-TW.md)
+
 **Period:** 2026/05 – Present<br>
 **Type:** Commercial / Full-time<br>
 **Role:** Full-stack Engineer<br>
 **Focus:** Next.js · Expo · Dispatch · GPS · Authentication
-
-> 連接客戶、營運人員與司機的旅運協作平台；本頁聚焦訂單生命週期、派車、GPS 與角色邊界。
 
 ## 1. Overview
 

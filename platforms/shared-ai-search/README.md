@@ -1,11 +1,11 @@
 # Shared AI Search Infrastructure
 
+[繁體中文](README.zh-TW.md)
+
 **Period:** 2026/05 – Present<br>
 **Type:** Commercial / Platform Engineering<br>
 **Role:** Platform / Integration Engineer<br>
 **Focus:** Search Gateway · SearXNG · Crawl4AI · Request Policy
-
-> 提供多個 AI 應用共用的搜尋與網頁內容服務；本頁聚焦 Gateway 邊界、Provider Adapter 與外部請求治理。
 
 ## 1. Overview
 

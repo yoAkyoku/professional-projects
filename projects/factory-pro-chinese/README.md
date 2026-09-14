@@ -1,11 +1,11 @@
 # Factory Pro Chinese
 
+[繁體中文](README.zh-TW.md)
+
 **Period:** 2026/05 – Present<br>
 **Type:** Commercial / Full-time<br>
 **Role:** Full-stack Engineer<br>
 **Focus:** Next.js · NestJS · Learning Platform · Multi-tenancy · Analytics
-
-> 企業員工學習平台；本頁聚焦學習進度、內容匯入、報表與租戶權限。
 
 ## 1. Overview
 

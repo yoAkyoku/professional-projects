@@ -1,11 +1,11 @@
 # POS / ERP / CRM Platform
 
+[繁體中文](README.zh-TW.md)
+
 **Period:** 2026/05 – Present<br>
 **Type:** Commercial / Full-time<br>
 **Role:** Full-stack Engineer<br>
 **Focus:** Legacy Modernization · ERP · Domain Modeling · System Integration
-
-> 多門市 POS、進銷存、製造與 CRM 整合平台；本頁只展示我負責的特定功能與工程決策。
 
 ## 1. Overview
 
