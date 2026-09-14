@@ -93,7 +93,7 @@ Voice settings, pacing, calibration, reading modes and replay behavior need to b
 - Scope playback and cancellation to the generation that created it.
 - Preserve session context across reconnects while keeping authorization boundaries.
 - Keep memory retention and deletion as explicit data lifecycle operations.
-- Place shared web search behind the common platform instead of coupling each application to a provider.
+- Keep external web search behind a provider adapter instead of coupling the conversation flow to one vendor.
 
 ## 9. Important Flows
 
@@ -117,12 +117,14 @@ Voice settings, pacing, calibration, reading modes and replay behavior need to b
 - Speech recognition
 - LLM provider
 - Text-to-speech provider
-- Shared AI search platform
+- External search provider adapter
 - PostgreSQL and Redis
 
 ## 12. Screenshots
 
 The following are recreated, sanitized demo interfaces for portfolio presentation:
+
+![Voice Conversation and Runtime State](screenshots/conversation.svg)
 
 - [Voice Conversation](screenshots/conversation.svg)
 - [Voice Settings](screenshots/voice-settings.svg)

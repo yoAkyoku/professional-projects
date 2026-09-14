@@ -122,6 +122,8 @@ LLM, embedding and messaging services can fail independently. I added asynchrono
 
 The following are recreated, sanitized demo interfaces for portfolio presentation:
 
+![LINE Conversation and Agent Trace](screenshots/line-conversation.svg)
+
 - [LINE Conversation](screenshots/line-conversation.svg)
 - [Knowledge Base](screenshots/knowledge-base.svg)
 - [Agent Settings](screenshots/agent-settings.svg)

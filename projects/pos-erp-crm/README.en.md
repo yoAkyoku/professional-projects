@@ -125,6 +125,8 @@ RFID UI and data flow are documented as an integration boundary. Physical reader
 
 The following are recreated, sanitized demo interfaces for portfolio presentation:
 
+![BOM Editor](screenshots/bom-editor.svg)
+
 - [POS Operations Dashboard](screenshots/pos-dashboard.svg)
 - [BOM Editor](screenshots/bom-editor.svg)
 - [Manufacturing Order](screenshots/manufacturing-order.svg)

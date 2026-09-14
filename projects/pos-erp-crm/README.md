@@ -95,6 +95,8 @@ RFID 實體讀卡器與付款流程僅記錄為整合邊界，不宣稱已完成
 
 ## 十、重製畫面
 
+![BOM Editor](screenshots/bom-editor.svg)
+
 - [POS Operations Dashboard](screenshots/pos-dashboard.svg)
 - [BOM Editor](screenshots/bom-editor.svg)
 - [Manufacturing Order](screenshots/manufacturing-order.svg)

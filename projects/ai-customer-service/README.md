@@ -95,6 +95,8 @@ Agent 會依使用者意圖分流至 RAG、外部 API Tool、房型／聯絡資�
 
 ## 十、重製畫面
 
+![LINE 對話與 Agent Trace](screenshots/line-conversation.svg)
+
 - [LINE Conversation](screenshots/line-conversation.svg)
 - [Knowledge Base](screenshots/knowledge-base.svg)
 - [Agent Settings](screenshots/agent-settings.svg)

@@ -125,6 +125,8 @@ Several screens existed before their API and state behavior were complete. I con
 
 The following are recreated, sanitized demo interfaces for portfolio presentation:
 
+![Dispatch Dashboard and GPS Map](screenshots/dispatch-dashboard.svg)
+
 - [Dispatch Dashboard](screenshots/dispatch-dashboard.svg)
 - [Driver Tracking](screenshots/driver-tracking.svg)
 

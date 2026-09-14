@@ -1,9 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
-<title id="title">Smart Travel / Dispatch</title><desc id="desc">Operations view for orders and assignments</desc>
-<defs><linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0f172a"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity=".12"/></filter><style>.title{font:700 24px Inter,Segoe UI,Arial,sans-serif;fill:#0f172a}.sub{font:400 14px Inter,Segoe UI,Arial,sans-serif;fill:#64748b}.menu{font:400 15px Inter,Segoe UI,Arial,sans-serif;fill:#64748b}.menuActive{font:700 15px Inter,Segoe UI,Arial,sans-serif;fill:#0f766e}.card{fill:#fff;stroke:#e2e8f0;filter:url(#shadow)}.label{font:400 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748b}.value{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#0f172a}.table{fill:#fff;stroke:#e2e8f0;filter:url(#shadow)}.head{font:700 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748b}.row{font:400 14px Inter,Segoe UI,Arial,sans-serif;fill:#334155}.pillLight{font:700 12px Inter,Segoe UI,Arial,sans-serif;fill:#fff}.pillDark{font:700 12px Inter,Segoe UI,Arial,sans-serif;fill:#475569}.foot{font:400 12px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}</style></defs>
-<rect width="1200" height="700" fill="#f8fafc"/><rect width="1200" height="72" fill="url(#top)"/><text x="38" y="44" style="font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#fff">PROFESSIONAL DEMO</text><text x="930" y="43" style="font:400 13px Inter,Segoe UI,Arial,sans-serif;fill:#dbeafe">SANITIZED UI</text>
-<rect x="0" y="72" width="260" height="628" fill="#fff"/><text x="40" y="120" style="font:700 18px Inter,Segoe UI,Arial,sans-serif;fill:#0f172a">Smart Travel</text><text x="48" y="176" class="menuActive">Dispatch</text><text x="48" y="218" class="menu">Orders</text><text x="48" y="260" class="menu">Drivers</text><text x="48" y="302" class="menu">Tracking</text><text x="48" y="344" class="menu">Reports</text>
-<text x="330" y="112" class="title">Smart Travel / Dispatch</text><text x="330" y="137" class="sub">Operations view for orders and assignments</text><g><rect x="330" y="168" width="165" height="85" rx="12" class="card"/><text x="348" y="198" class="label">Pending</text><text x="348" y="230" class="value">18 trips</text></g><g><rect x="520" y="168" width="165" height="85" rx="12" class="card"/><text x="538" y="198" class="label">Assigned</text><text x="538" y="230" class="value">12 trips</text></g><g><rect x="710" y="168" width="165" height="85" rx="12" class="card"/><text x="728" y="198" class="label">Online drivers</text><text x="728" y="230" class="value">8</text></g><g><rect x="900" y="168" width="165" height="85" rx="12" class="card"/><text x="918" y="198" class="label">Exceptions</text><text x="918" y="230" class="value">3</text></g>
-<rect x="330" y="290" width="795" height="290" rx="14" class="table"/><text x="350" y="322" class="head">Trip</text><text x="655" y="322" class="head">Assignment</text><text x="960" y="322" class="head">State</text><g><line x1="330" y1="355" x2="1125" y2="355" stroke="#e2e8f0"/><text x="350" y="342" class="row">Trip A</text><text x="655" y="342" class="row">Driver 01</text><rect x="960" y="325" width="125" height="28" rx="14" fill="#0f766e"/><text x="980" y="344" class="pillLight">Assigned</text></g><g><line x1="330" y1="409" x2="1125" y2="409" stroke="#e2e8f0"/><text x="350" y="396" class="row">Trip B</text><text x="655" y="396" class="row">Awaiting</text><rect x="960" y="379" width="125" height="28" rx="14" fill="#e2e8f0"/><text x="980" y="398" class="pillDark">Pending</text></g><g><line x1="330" y1="463" x2="1125" y2="463" stroke="#e2e8f0"/><text x="350" y="450" class="row">Trip C</text><text x="655" y="450" class="row">Driver 02</text><rect x="960" y="433" width="125" height="28" rx="14" fill="#0f766e"/><text x="980" y="452" class="pillLight">In progress</text></g>
-<text x="330" y="635" class="foot">Recreated demo UI · sample data only · no production customer information</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="nav" x1="0" x2="1"><stop stop-color="#10253f"/><stop offset="1" stop-color="#1d4d73"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#dce7ee" stroke-width="1"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#1c3344" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f8fa"/>
+  <rect width="1200" height="76" fill="url(#nav)"/>
+  <text x="44" y="34" fill="#9bd8ff" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">SMART TRAVEL</text>
+  <text x="44" y="57" fill="#fff" font-family="Arial, sans-serif" font-size="23" font-weight="700">派車調度中心</text>
+  <text x="1074" y="43" fill="#d9f5e5" font-family="Arial, sans-serif" font-size="13" text-anchor="end">RECREATED DEMO</text>
+  <circle cx="1147" cy="38" r="16" fill="#4fd18b"/><text x="1147" y="43" fill="#10253f" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">A</text>
+
+  <rect x="28" y="101" width="366" height="628" rx="12" fill="#fff" filter="url(#shadow)"/>
+  <text x="54" y="138" fill="#18334a" font-family="Arial, sans-serif" font-size="20" font-weight="700">今日訂單</text>
+  <text x="336" y="137" fill="#678091" font-family="Arial, sans-serif" font-size="13" text-anchor="end">12 筆待處理</text>
+  <rect x="50" y="158" width="322" height="42" rx="8" fill="#eef5f9"/>
+  <text x="68" y="184" fill="#607887" font-family="Arial, sans-serif" font-size="14">搜尋訂單或乘客</text>
+  <text x="55" y="232" fill="#617987" font-family="Arial, sans-serif" font-size="12" font-weight="700">待派車</text>
+
+  <rect x="50" y="248" width="322" height="91" rx="9" fill="#f8fbfd" stroke="#dbe7ed"/>
+  <circle cx="76" cy="276" r="8" fill="#f4b44a"/><text x="96" y="278" fill="#18334a" font-family="Arial, sans-serif" font-size="15" font-weight="700">TRIP-001</text><text x="335" y="278" fill="#607887" font-family="Arial, sans-serif" font-size="12" text-anchor="end">09:30</text>
+  <text x="68" y="304" fill="#385a6d" font-family="Arial, sans-serif" font-size="13">桃園機場 → 台北車站</text><text x="68" y="324" fill="#8194a0" font-family="Arial, sans-serif" font-size="12">2 位乘客・行李 3 件</text>
+
+  <rect x="50" y="350" width="322" height="91" rx="9" fill="#edf8f2" stroke="#bfe6cf"/>
+  <circle cx="76" cy="378" r="8" fill="#38b875"/><text x="96" y="380" fill="#18334a" font-family="Arial, sans-serif" font-size="15" font-weight="700">TRIP-002</text><text x="335" y="380" fill="#267a50" font-family="Arial, sans-serif" font-size="12" text-anchor="end">10:00</text>
+  <text x="68" y="406" fill="#385a6d" font-family="Arial, sans-serif" font-size="13">台北車站 → 內湖科技園區</text><text x="68" y="426" fill="#8194a0" font-family="Arial, sans-serif" font-size="12">已指派 Driver A・執行中</text>
+
+  <text x="55" y="476" fill="#617987" font-family="Arial, sans-serif" font-size="12" font-weight="700">可用司機</text>
+  <rect x="50" y="492" width="322" height="62" rx="9" fill="#fff" stroke="#dbe7ed"/>
+  <circle cx="78" cy="523" r="18" fill="#d8edf9"/><text x="78" y="528" fill="#14618a" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">DA</text><text x="108" y="518" fill="#18334a" font-family="Arial, sans-serif" font-size="14" font-weight="700">Driver A</text><text x="108" y="538" fill="#758b98" font-family="Arial, sans-serif" font-size="12">距上車點 1.2 km</text><rect x="305" y="514" width="48" height="20" rx="10" fill="#dff6e9"/><text x="329" y="528" fill="#267a50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">在線</text>
+  <rect x="50" y="566" width="322" height="62" rx="9" fill="#fff" stroke="#dbe7ed"/>
+  <circle cx="78" cy="597" r="18" fill="#f1e2fb"/><text x="78" y="602" fill="#7c48a1" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">DB</text><text x="108" y="592" fill="#18334a" font-family="Arial, sans-serif" font-size="14" font-weight="700">Driver B</text><text x="108" y="612" fill="#758b98" font-family="Arial, sans-serif" font-size="12">距上車點 3.8 km</text><rect x="305" y="588" width="48" height="20" rx="10" fill="#dff6e9"/><text x="329" y="602" fill="#267a50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">在線</text>
+  <rect x="50" y="657" width="322" height="45" rx="8" fill="#1e719f"/><text x="211" y="685" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">開啟 AI 派車建議</text>
+
+  <rect x="414" y="101" width="758" height="628" rx="12" fill="#fff" filter="url(#shadow)"/>
+  <text x="442" y="138" fill="#18334a" font-family="Arial, sans-serif" font-size="20" font-weight="700">即時位置與路線</text><text x="1144" y="137" fill="#617987" font-family="Arial, sans-serif" font-size="12" text-anchor="end">最後更新 10:02:18</text>
+  <rect x="438" y="158" width="710" height="408" rx="8" fill="#e8f0ea"/>
+  <rect x="438" y="158" width="710" height="408" rx="8" fill="url(#grid)" opacity=".65"/>
+  <path d="M440 255 C570 210 620 310 735 266 S920 205 1148 250 M438 437 C575 380 690 468 800 411 S1000 365 1148 430 M578 160 C560 275 660 330 630 565 M927 158 C880 280 985 340 955 565" fill="none" stroke="#c6d4d0" stroke-width="28" opacity=".72"/>
+  <path d="M452 476 C590 452 640 392 732 355 S875 295 1017 238" fill="none" stroke="#fff" stroke-width="17" opacity=".9"/>
+  <path d="M452 476 C590 452 640 392 732 355 S875 295 1017 238" fill="none" stroke="#2485bd" stroke-width="5" stroke-dasharray="10 7"/>
+  <circle cx="452" cy="476" r="13" fill="#f2aa3d" stroke="#fff" stroke-width="4"/><text x="476" y="481" fill="#385a6d" font-family="Arial, sans-serif" font-size="12" font-weight="700">上車點</text>
+  <circle cx="1017" cy="238" r="13" fill="#e16b5a" stroke="#fff" stroke-width="4"/><text x="1040" y="243" fill="#385a6d" font-family="Arial, sans-serif" font-size="12" font-weight="700">目的地</text>
+  <circle cx="732" cy="355" r="21" fill="#1e719f" stroke="#fff" stroke-width="5"/><path d="M721 357h22l-4-8h-14zM724 359v8M740 359v8" fill="none" stroke="#fff" stroke-width="3"/><text x="714" y="397" fill="#18334a" font-family="Arial, sans-serif" font-size="12" font-weight="700">Driver A</text>
+  <rect x="465" y="181" width="168" height="62" rx="8" fill="#fff" opacity=".95"/><text x="483" y="206" fill="#18334a" font-family="Arial, sans-serif" font-size="13" font-weight="700">TRIP-002 執行中</text><text x="483" y="226" fill="#617987" font-family="Arial, sans-serif" font-size="12">預估抵達 10:24</text>
+  <rect x="939" y="482" width="190" height="64" rx="8" fill="#fff" opacity=".95"/><circle cx="962" cy="505" r="7" fill="#2485bd"/><text x="979" y="509" fill="#385a6d" font-family="Arial, sans-serif" font-size="12">已規劃路線</text><circle cx="962" cy="528" r="7" fill="#e16b5a"/><text x="979" y="532" fill="#385a6d" font-family="Arial, sans-serif" font-size="12">目的地</text>
+  <rect x="438" y="588" width="710" height="116" rx="8" fill="#f7fafc" stroke="#dbe7ed"/>
+  <text x="462" y="618" fill="#18334a" font-family="Arial, sans-serif" font-size="15" font-weight="700">Driver A</text><rect x="532" y="605" width="49" height="21" rx="11" fill="#dff6e9"/><text x="556" y="619" fill="#267a50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">在線</text>
+  <text x="462" y="648" fill="#617987" font-family="Arial, sans-serif" font-size="12">車型 Van</text><text x="578" y="648" fill="#617987" font-family="Arial, sans-serif" font-size="12">目前行程 TRIP-002</text><text x="778" y="648" fill="#617987" font-family="Arial, sans-serif" font-size="12">GPS 位置正常</text>
+  <rect x="1006" y="621" width="112" height="35" rx="7" fill="#fff" stroke="#b9d0dc"/><text x="1062" y="643" fill="#1e719f" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">查看行程</text>
+  <text x="462" y="681" fill="#8a9ba4" font-family="Arial, sans-serif" font-size="11">去識別化重製畫面・範例訂單與司機資料</text>
 </svg>

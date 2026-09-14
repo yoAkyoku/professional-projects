@@ -40,7 +40,7 @@
 - Realtime：WebSocket
 - AI：Speech-to-text、LLM、Text-to-speech、Agent Tools
 - Data：PostgreSQL、Redis
-- Infrastructure：Docker、Shared Search Gateway、External AI Providers
+- Infrastructure：Docker、外部搜尋 Provider、External AI Providers
 
 **skills:** Node.js, Fastify, React, WebSocket, LLM, Agent, MCP, Tools, Skills, STT, TTS, SearXNG, ElevenLabs
 
@@ -90,6 +90,8 @@ WebSocket 斷線不應直接遺失長者正在進行的對話，因此建立 Ses
 - External Provider Failure State
 
 ## 十、重製畫面
+
+![語音對話與即時狀態](screenshots/conversation.svg)
 
 - [Voice Conversation](screenshots/conversation.svg)
 - [Voice Settings](screenshots/voice-settings.svg)

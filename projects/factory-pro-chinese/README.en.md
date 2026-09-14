@@ -121,7 +121,15 @@ Bulk content and learner imports can contain incomplete or inconsistent data. I 
 
 ## 12. Screenshots
 
-Only sanitized learner, lesson and administrator screens will be included.
+### Learner lesson player
+
+![Learner lesson player](screenshots/lesson-player.svg)
+
+### Administrative content import
+
+![Administrative content import](screenshots/admin-import.svg)
+
+These are recreated, sanitized demo interfaces using sample data, not production customer screenshots.
 
 ## 13. Trade-offs & Limitations
 

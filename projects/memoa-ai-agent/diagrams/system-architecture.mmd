@@ -4,6 +4,5 @@ flowchart LR
     gateway --> ws[WebSocket Voice Session]
     ws --> agent[Agent Runtime]
     agent --> data[(PostgreSQL / Redis)]
-    agent --> search[Shared Search]
+     agent --> search[External Search Adapter]
     agent --> voice[STT / LLM / TTS]
-

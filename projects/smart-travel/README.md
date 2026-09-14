@@ -92,6 +92,8 @@
 
 ## 十、重製畫面
 
+![派車調度與 GPS 地圖](screenshots/dispatch-dashboard.svg)
+
 - [Dispatch Dashboard](screenshots/dispatch-dashboard.svg)
 - [Driver Tracking](screenshots/driver-tracking.svg)
 
