@@ -58,7 +58,7 @@ NestJS, Node.js
 PostgreSQL, Redis
 
 **Integrations**  
-Translation, speech, OCR, Zalo and push notification services
+Multilingual content, Excel import, analytics APIs and push notifications
 
 **Infrastructure**  
 Docker and CI-oriented deployment workflows
@@ -111,11 +111,10 @@ Bulk content and learner imports can contain incomplete or inconsistent data. I 
 - Container health checks
 - Build and deployment troubleshooting
 
-## 11. External Integrations
+## 11. Application Integrations
 
-- Translation and speech services
-- OCR processing
-- Zalo
+- Multilingual learning content and localization
+- Excel-based bulk import and validation
 - Push notifications
 - Analytics APIs
 
@@ -133,7 +132,7 @@ These are recreated, sanitized demo interfaces using sample data, not production
 
 ## 13. Trade-offs & Limitations
 
-The case study focuses on selected learning and administration features. Production learner data, enterprise identities and provider credentials are excluded.
+The case study focuses on selected learning, administration, localization and import features. OCR and speech recognition are not part of the implemented scope. Production learner data, enterprise identities and provider credentials are excluded.
 
 ## 14. Outcome
 

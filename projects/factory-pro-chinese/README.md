@@ -39,7 +39,7 @@
 - Frontend：Next.js、React、Tailwind-style UI
 - Backend：NestJS、Node.js
 - Data：PostgreSQL、Redis
-- Integration：Translation、Speech、OCR、Zalo、Push Notification
+- Application：多語系內容、Excel 批次匯入、Analytics API、Push Notification
 - Infrastructure：Docker、CI-oriented Deployment
 
 **skills:** TypeScript, Next.js, NestJS, PostgreSQL, Redis, Docker, Multi-tenant, RBAC, PWA
@@ -103,7 +103,7 @@
 
 ## 十一、取捨與限制
 
-本案例聚焦學習與管理功能，不包含正式學員資料、企業身份與 Provider 憑證。
+本案例聚焦學習、管理、在地化內容與批次匯入功能，不包含 OCR、語音辨識、正式學員資料、企業身份與 Provider 憑證。
 
 ## 十二、成果
 

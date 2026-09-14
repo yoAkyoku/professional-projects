@@ -75,7 +75,7 @@ Multi-tenant learning platform for factory workers and enterprise administrators
 
 **Focus:**  
 Next.js · NestJS · PostgreSQL · Learning Platform · Analytics ·
-OCR · Speech · Import Workflows
+Multilingual Content · Import Workflows
 
 [View Case Study](./projects/factory-pro-chinese/README.md)
 
