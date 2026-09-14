@@ -1,128 +1,72 @@
-# Professional Project Case Studies
+# 商業工程專案案例集
 
-[繁體中文](README.zh-TW.md)
+[English](README.en.md)
 
-Commercial software engineering case studies from full-time work, freelance projects, and client engagements.
+這個 Repository 用來整理我在全職工作、接案與客戶專案中參與的商業軟體工程案例。
 
-This repository focuses on selected features and engineering decisions rather than complete source code:
+內容聚焦於特定功能與工程決策，不包含完整產品原始碼：
 
-- Enterprise systems
-- AI and Agent applications
-- System integrations
-- Multi-tenancy and authorization
-- Reliability and security
-- Data and domain modeling
-- Production-oriented development
+- 企業系統
+- AI 與 Agent 應用
+- 系統整合
+- 多租戶與權限設計
+- 可靠性與安全性
+- 資料與領域模型
+- 以實際部署為導向的開發
 
-The case studies cover work from **May 2026 to the present**.
+案例內容整理 **2026 年 3 月至 2026 年 9 月** 的商業開發工作。
 
-> Commercial source code and production data are not publicly available.
-> All materials have been simplified and anonymized for portfolio presentation.
+> 商業專案的原始碼與正式資料不公開。
+> 所有內容均已簡化、去識別化或使用重製資料。
 
-## Selected Projects
+## 專案總覽
 
-| Project | Role | Main Engineering Focus |
+| 專案 | 角色 | 主要工程重點 |
 | --- | --- | --- |
-| POS / ERP / CRM | Full-stack Engineer | Domain Modeling, BOM, Inventory, Outbox |
-| AI Customer Service | AI / Backend Engineer | LangGraph, RAG, Hybrid Retrieval |
-| Memoa | Full-stack / AI Engineer | Realtime Voice Agent, WebSocket |
-| Smart Travel | Full-stack Engineer | Web / Mobile, Dispatch, GPS |
-| Factory Pro Chinese | Full-stack Engineer | Multi-tenant Learning Platform |
-| Shared AI Search | Platform Engineer | Search Gateway, SearXNG, Crawl4AI |
+| 多門市 POS／ERP／CRM | Full-stack Engineer | 領域建模、BOM、庫存、跨系統同步 |
+| LINE 多租戶 AI 智能客服 | AI / Backend Engineer | LangGraph、RAG、Hybrid Retrieval |
+| Memoa AI 語音陪伴與 Agent | Full-stack / AI Engineer | 即時語音、WebSocket、Agent |
+| 智慧旅運與 AI 派車 | Full-stack Engineer | Web、Mobile、派車、GPS |
+| Factory Pro Chinese | Full-stack Engineer | 多租戶學習平台、Analytics |
 
-### POS / ERP / CRM Platform
+## 精選案例
 
-Selected features from a multi-store POS, inventory, manufacturing, finance and CRM platform.
+- [多門市 POS／ERP／CRM 平台](projects/pos-erp-crm/README.md)
+- [LINE 多租戶 AI 智能客服](projects/ai-customer-service/README.md)
+- [Memoa AI 語音陪伴與 Agent](projects/memoa-ai-agent/README.md)
+- [智慧旅運與 AI 派車平台](projects/smart-travel/README.md)
+- [Factory Pro Chinese 越南工廠中文學習平台](projects/factory-pro-chinese/README.md)
 
-**Focus:**  
-Legacy modernization · Domain modeling · BOM · Inventory · Manufacturing ·
-Multi-tenancy · POS-to-CRM integration · Reliability
+## 如何閱讀
 
-[View Case Study](./projects/pos-erp-crm/README.md)
+每個案例只展示特定功能，不代表完整系統：
 
-### Multi-tenant AI Customer Service
+1. 專案背景
+2. 我的負責範圍
+3. 特定功能
+4. 架構圖與重要流程
+5. 工程挑戰
+6. 技術決策
+7. 可靠性與安全性
+8. 取捨與限制
 
-LINE-based AI customer service with LangGraph, RAG and hybrid retrieval.
-
-**Focus:**  
-AI Agent · RAG · PostgreSQL · Vector Search · BM25 · LINE ·
-Knowledge Base · Human Escalation
-
-[View Case Study](./projects/ai-customer-service/README.md)
-
-### Memoa AI Voice Agent
-
-Realtime voice companion and care platform with STT, LLM and TTS.
-
-**Focus:**  
-Voice AI · WebSocket · Agent Runtime · Memory · Privacy · Search ·
-Reconnect Handling
-
-[View Case Study](./projects/memoa-ai-agent/README.md)
-
-### Smart Travel Platform
-
-Travel operations and dispatch platform for staff, drivers and customers.
-
-**Focus:**  
-Next.js · Expo · Dispatch · GPS · Mobile · Authentication ·
-Order Lifecycle · AI Assistance
-
-[View Case Study](./projects/smart-travel/README.md)
-
-### Factory Pro Chinese
-
-Multi-tenant learning platform for factory workers and enterprise administrators.
-
-**Focus:**  
-Next.js · NestJS · PostgreSQL · Learning Platform · Analytics ·
-OCR · Speech · Import Workflows
-
-[View Case Study](./projects/factory-pro-chinese/README.md)
-
-## Platform Engineering
-
-### Shared AI Search Infrastructure
-
-Shared search and web-content infrastructure used by multiple AI applications.
-
-[View Case Study](./platforms/shared-ai-search/README.md)
-
-## How to Read a Case Study
-
-Each case study documents selected functionality instead of the entire application:
-
-1. Project context
-2. My responsibilities
-3. Selected feature scope
-4. Architecture diagram
-5. Important flow
-6. Engineering challenges
-7. Technical decisions
-8. Reliability and security considerations
-9. Trade-offs and limitations
-
-Each Mermaid diagram has an accompanying SVG export:
+每張圖都同時保留 Mermaid 原始檔與 SVG：
 
 ```text
 diagrams/system-architecture.mmd
 diagrams/system-architecture.svg
 ```
 
-The `.mmd` file is the editable source. The `.svg` file is used for GitHub, resumes and presentations.
+## 保密範圍
 
-## Confidentiality
+本 Repository 不包含：
 
-These projects were developed in professional or commercial environments.
+- 正式環境原始碼
+- 帳號、密鑰或 Token
+- 正式資料庫
+- 客戶與使用者資料
+- 內部網址、IP 或伺服器資訊
+- 未去識別化的截圖或 Log
+- 客戶專屬商業規則
 
-This repository does **not** contain:
-
-- Production source code
-- Credentials or API keys
-- Production databases
-- Customer information
-- Internal infrastructure addresses
-- Confidential business rules
-- Unmasked screenshots or logs
-
-Architecture diagrams, screenshots and implementation descriptions have been simplified or anonymized for portfolio presentation.
+架構圖、畫面與實作說明均已簡化或去識別化，僅供作品展示與技術討論。

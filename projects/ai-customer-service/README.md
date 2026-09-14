@@ -1,149 +1,120 @@
-# Multi-tenant AI Customer Service
+# 多租戶 AI 客服平台
 
-[繁體中文](README.zh-TW.md)
+[English](README.en.md)
 
-**Period:** 2026/05 – Present<br>
-**Type:** Commercial / Full-time<br>
-**Role:** AI Application / Backend Engineer<br>
-**Focus:** LangGraph · RAG · Hybrid Retrieval · LINE · Tenant Isolation
+**期間：** 2026/05 – 2026/06<br>
+**專案類型：** 商業專案／全職工作<br>
+**角色：** AI Application / Backend Engineer<br>
+**重點：** LangGraph · RAG · Hybrid Retrieval · LINE · Tenant Isolation
 
-## 1. Overview
+## 一、專案概述
 
-A LINE-based intelligent customer service platform that connects messaging, knowledge retrieval, AI agent orchestration and human escalation.
+以 LINE 為入口，整合訊息接收、知識檢索、AI Agent 與人工轉接的智能客服平台。
 
-## 2. Project Context
+## 二、專案背景
 
-Customer service questions often require organization-specific knowledge. A single generic chatbot cannot safely answer across different tenants, so the system needs tenant-aware knowledge retrieval, controlled tool usage and a clear fallback to human support.
+不同組織的客服問題需要使用各自的知識內容。系統必須維持租戶隔離、提供可控的知識檢索，並在 AI 無法安全回答時轉交人工處理。
 
-## 3. My Role
+## 三、我的角色
 
-**AI Application / Backend Engineer**
+我負責 LINE Webhook、FastAPI、LangGraph Agent、RAG、混合檢索、知識庫、租戶權限、非同步錯誤處理與外部 AI 服務整合。
 
-I worked across:
+## 四、負責範圍
 
-- LINE Webhook integration
-- FastAPI service design
-- LangGraph agent orchestration
-- RAG and hybrid retrieval
-- Knowledge-base workflows
-- Tenant and permission boundaries
-- Async error handling
-- External AI and notification integrations
+- 接收與驗證 LINE 訊息
+- 將對話連結至正確的租戶與使用者
+- 建立 Agent 的問題處理與回覆流程
+- 實作向量搜尋與關鍵字搜尋
+- 加入 Query Rewrite、Embedding 與排名合併
+- 建立文件解析、Chunking、PII Masking、Embedding 與索引流程
+- 建立 AI 無法回答時的人工轉接
+- 管理知識內容與後台設定
+- 處理 Webhook 重複事件
+- 處理 LLM、Embedding 與通知服務的非同步錯誤
+- 整合通知與語音相關服務
 
-## 4. Scope & Responsibilities
+## 五、技術環境
 
-Selected responsibilities included:
+- Backend：FastAPI、Python
+- AI：LangGraph、LLM、Embedding
+- Retrieval：PostgreSQL、pgvector、BM25、RRF
+- Integration：LINE Messaging API、Webhook、Notification、TTS
+- Infrastructure：Docker、Background Tasks、Database Migration
 
-- Receiving and validating LINE messages
-- Connecting conversations to the correct tenant and user context
-- Building the agent flow for intent handling and response generation
-- Implementing knowledge retrieval with vector and lexical search
-- Supporting query rewriting and embedding generation
-- Designing human escalation when the system cannot answer safely
-- Managing knowledge content and administrative settings
-- Handling webhook duplication and asynchronous failures
-- Integrating notification and voice-related services
+**skills:** Python, FastAPI, LangGraph, PostgreSQL, pgvector, RAG, Embedding, BM25, RRF, LINE Messaging API, LLM
 
-## 5. Tech Stack
+## 六、系統架構
 
-**Backend**  
-FastAPI, Python
+![AI 客服架構](diagrams/system-architecture.svg)
 
-**AI**  
-LangGraph, LLM APIs, Embeddings
+- [Mermaid 原始圖](diagrams/system-architecture.mmd)
+- [LINE Agent 流程](diagrams/line-agent-flow.svg)
+- [RAG Pipeline](diagrams/rag-pipeline.svg)
+- [多租戶模型](diagrams/multi-tenant-model.svg)
 
-**Retrieval**  
-PostgreSQL, pgvector, BM25-style lexical retrieval, RRF ranking
+## 七、主要工程挑戰
 
-**Integration**  
-LINE Messaging API, Webhook, notification and voice providers
+### 混合語意與關鍵字檢索
 
-**Infrastructure**  
-Docker, background tasks and database migrations
+向量搜尋適合語意理解，關鍵字搜尋則能補足產品名稱、政策用語與組織專有名詞，因此建立混合檢索與排名合併流程。
 
-## 6. System Architecture
+### 維持租戶知識隔離
 
-![AI customer service architecture](diagrams/system-architecture.svg)
+相同問題在不同組織可能有不同答案，因此租戶上下文必須從 Webhook、檢索、Prompt 到 Agent 回覆一路傳遞。
 
-[View Mermaid source](diagrams/system-architecture.mmd)
+### 處理不確定答案
 
-## 7. Key Engineering Challenges
+當系統沒有足夠證據時，不應產生看似確定的回答，因此建立無法回答與人工轉接流程。
 
-### Combining semantic and keyword retrieval
+### 處理外部服務失敗
 
-Semantic retrieval is useful for meaning, while lexical retrieval is important for product names, policy terms and organization-specific wording. I designed a hybrid retrieval flow so both types of evidence can participate in the answer.
+LLM、Embedding 與 Messaging Provider 可能個別失敗，因此加入非同步錯誤處理與清楚的失敗狀態。
 
-### Keeping tenant knowledge isolated
+### 依意圖選擇處理路徑
 
-The same question can have different answers for different organizations. Tenant context therefore needs to be carried through the webhook, retrieval, prompt construction and response path.
+Agent 會依使用者意圖分流至 RAG、外部 API Tool、房型／聯絡資訊或人工客服流程，並在 Provider 異常時執行安全降級。
 
-### Handling uncertain answers
+## 八、技術決策
 
-An AI response should not appear authoritative when the system lacks enough evidence. I designed an escalation path and explicit no-answer behavior for cases requiring human handling.
+- 使用混合檢索，而不是只依賴向量相似度。
+- 在 Agent 取得內容前先完成租戶範圍過濾。
+- 分離 Webhook 驗證、對話狀態、檢索與回覆生成。
+- 將人工轉接視為正式業務流程。
+- 將第三方憑證放在設定中，不寫入業務邏輯。
 
-### Recovering from external service failures
+## 九、可靠性與安全性
 
-LLM, embedding and messaging services can fail independently. I added asynchronous error handling and clearer failure states so one provider failure does not silently become a misleading customer response.
+- LINE Signature Verification
+- Webhook Deduplication
+- Tenant-aware Retrieval
+- 後台權限檢查
+- 敏感資料處理
+- 非同步例外處理
+- Provider 設定隔離
+- 人工轉接與安全 fallback
 
-## 8. Technical Decisions
-
-- Use hybrid retrieval instead of relying on vector similarity alone.
-- Keep knowledge retrieval tenant-scoped before the agent receives context.
-- Separate webhook validation, conversation state, retrieval and response generation.
-- Treat human escalation as a first-class workflow.
-- Keep external provider credentials in configuration rather than application logic.
-
-## 9. Important Flows
-
-- LINE message to agent response: [LINE agent flow](diagrams/line-agent-flow.svg)
-- Document query to ranked context: [RAG pipeline](diagrams/rag-pipeline.svg)
-- Tenant and knowledge boundaries: [Multi-tenant model](diagrams/multi-tenant-model.svg)
-
-## 10. Reliability & Security
-
-- LINE signature verification
-- Webhook deduplication
-- Tenant-aware retrieval
-- Permission checks for administrative actions
-- Sensitive data handling
-- Async exception handling
-- Provider configuration isolation
-- Safe fallback and human escalation
-
-## 11. External Integrations
-
-- LINE Messaging API
-- LLM and embedding providers
-- PostgreSQL / pgvector
-- Notification services
-- Optional text-to-speech services
-
-## 12. Screenshots
-
-The following are recreated, sanitized demo interfaces for portfolio presentation:
+## 十、重製畫面
 
 - [LINE Conversation](screenshots/line-conversation.svg)
 - [Knowledge Base](screenshots/knowledge-base.svg)
 - [Agent Settings](screenshots/agent-settings.svg)
 
-They use sample data and are not production screenshots.
+以上均為去識別化重製畫面，使用範例資料，不是正式客戶截圖。
 
-## 13. Trade-offs & Limitations
+## 十一、取捨與限制
 
-The case study documents the application and retrieval design. Formal provider SLA, production traffic and customer-answer accuracy are not claimed here.
+本案例描述應用程式與檢索設計，不宣稱正式服務流量、第三方 SLA 或實際客服準確率。
 
-The background processing approach is suitable for the current scope; a larger ingestion workload may require a durable queue and dedicated workers.
+目前的背景處理方式適合現階段範圍；若未來文件匯入規模增加，可再改為持久化 Queue 與獨立 Worker。
 
-## 14. Outcome
+## 十二、成果
 
-The selected features form a complete path from LINE message intake to knowledge-backed response, with tenant boundaries and human escalation included in the design.
+完成從 LINE 訊息接收、租戶知識檢索、Agent 回覆到人工轉接的完整流程。
 
-## 15. What I Learned
+## 十三、學習
 
-This project deepened my understanding of RAG quality, AI workflow orchestration, tenant-aware context and the importance of designing safe behavior for uncertain model output.
+這個專案加深我對 RAG 品質、AI Workflow、租戶上下文與不確定答案安全處理的理解。
 
-## 16. Confidentiality
+## 保密聲明
 
-This is a commercial project.
-
-Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
+這是商業專案。公開內容不包含正式原始碼、憑證、客戶資料或專有商業資訊。

@@ -1,148 +1,113 @@
-# Memoa AI Voice Agent
+# Memoa AI 語音 Agent
 
-[繁體中文](README.zh-TW.md)
+[English](README.en.md)
 
-**Period:** 2026/05 – Present<br>
-**Type:** Commercial / Full-time<br>
-**Role:** Full-stack / AI Application Engineer<br>
-**Focus:** Realtime Voice Agent · WebSocket · STT → LLM → TTS · Privacy
+**期間：** 2026/08 – 2026/09<br>
+**專案類型：** 商業專案／全職工作<br>
+**角色：** Full-stack / AI Application Engineer<br>
+**重點：** Realtime Voice Agent · WebSocket · STT → LLM → TTS · Privacy
 
-## 1. Overview
+## 一、專案概述
 
-A realtime AI voice companion and care platform that combines conversational voice interaction, memory, knowledge retrieval and family or care-team access.
+結合即時語音互動、記憶、知識檢索與家屬／照護人員存取的語音陪伴與照護平台。
 
-## 2. Project Context
+## 二、專案背景
 
-Voice interaction has different reliability requirements from ordinary request-response screens. The system must coordinate microphone state, transcription, generation, playback, reconnect behavior and conversation ownership without losing the user's context.
+語音互動比一般頁面請求更重視狀態協調。系統需要同時處理麥克風、轉錄、生成、播放、取消、重新連線與對話擁有權，並且不能遺失使用者上下文。
 
-## 3. My Role
+## 三、我的角色
 
-**Full-stack / AI Application Engineer**
+我負責 TypeScript 應用、LIFF 與 Web 介面、Gateway、WebSocket 語音流程、STT → LLM → TTS、對話與記憶、家屬／照護存取，以及可靠性、隱私與資源限制。
 
-I worked across:
+## 四、負責範圍
 
-- TypeScript monorepo applications
-- LIFF and web interfaces
-- Gateway and API integration
-- WebSocket voice sessions
-- STT → LLM → TTS orchestration
-- Conversation and memory handling
-- Care and family access
-- Reliability, privacy and resource controls
+- 建立語音對話生命週期
+- 管理轉錄擁有權與 utterance 狀態
+- 處理 generation cancellation 與播放狀態
+- 支援斷線後的 Session Continuity
+- 開發後台動態啟用 MCP、Tools、Skills、Knowledge Base 與外部搜尋的設定流程
+- 實作語音與辨識設定
+- 改善長者易讀與易操作介面
+- 支援回放、閱讀模式與語音控制
+- 分離長者、家屬與照護人員資料權限
+- 管理記憶、知識、保留與刪除流程
+- 加入 Socket、Log、Container Resource 與 Request 限制
+- 整合自架外部搜尋，並明確區分 Provider 邊界
 
-## 4. Scope & Responsibilities
+## 五、技術環境
 
-Selected responsibilities included:
+- Applications：TypeScript、LIFF、Fastify、Admin Web、Family Web
+- Realtime：WebSocket
+- AI：Speech-to-text、LLM、Text-to-speech、Agent Tools
+- Data：PostgreSQL、Redis
+- Infrastructure：Docker、Shared Search Gateway、External AI Providers
 
-- Building the voice conversation lifecycle
-- Managing transcription ownership and utterance state
-- Handling generation cancellation and playback state
-- Preserving sessions across dropped connections
-- Implementing voice and recognition settings
-- Improving senior-friendly interaction patterns
-- Supporting replay, reading modes and accessible controls
-- Separating resident, family and care-team data access
-- Managing memory, knowledge retention and deletion behavior
-- Adding limits for sockets, logs, container resources and requests
-- Moving shared search functionality into the Infra platform
+**skills:** Node.js, Fastify, React, WebSocket, LLM, Agent, MCP, Tools, Skills, STT, TTS, SearXNG, ElevenLabs
 
-## 5. Tech Stack
+## 六、系統架構
 
-**Applications**  
-TypeScript, LIFF, Fastify, administrative and family-facing web apps
+![Memoa 架構](diagrams/system-architecture.svg)
 
-**Realtime**  
-WebSocket
+- [Mermaid 原始圖](diagrams/system-architecture.mmd)
+- [語音 Agent Pipeline](diagrams/voice-agent-pipeline.svg)
+- [Agent Runtime](diagrams/agent-runtime.svg)
 
-**AI**  
-Speech-to-text, LLM, text-to-speech, agent tools and knowledge retrieval
+## 七、主要工程挑戰
 
-**Data**  
-PostgreSQL, Redis
+### 協調即時語音回合
 
-**Infrastructure**  
-Docker, shared search gateway and external AI providers
+一段對話可能同時包含錄音、部分轉錄、最終轉錄、生成、播放與取消。我將這些狀態拆開，並綁定至正確的 utterance 與 generation。
 
-## 6. System Architecture
+### 斷線後恢復對話
 
-![Memoa architecture](diagrams/system-architecture.svg)
+WebSocket 斷線不應直接遺失長者正在進行的對話，因此建立 Session Continuity，並明確定義恢復、結束與錯誤提示。
 
-[View Mermaid source](diagrams/system-architecture.mmd)
+### 避免不同 Session 互相影響
 
-## 7. Key Engineering Challenges
+系統不能回答錯誤房間、使用別人的轉錄，也不能讓舊 Socket 關閉新的對話，因此強化 identity、expiry 與 generation ownership 檢查。
 
-### Coordinating a realtime voice turn
+### 讓複雜設定容易理解
 
-A single conversation can involve microphone capture, partial transcript, final transcript, generation, audio playback and cancellation. I separated these states and tied them to the correct utterance and generation.
+語音、節奏、校正、閱讀模式與回放功能需要適合長者使用，因此簡化互動方式並改善狀態回饋。
 
-### Recovering from reconnects
+## 八、技術決策
 
-A dropped WebSocket connection should not erase the resident's active conversation. I implemented session continuity and clarified when a reconnect should resume, stop or show recovery guidance.
+- 將每個 conversation turn 與 generation 視為明確單位。
+- 讓播放與取消只作用於產生該回覆的 generation。
+- 在保留上下文的同時維持權限邊界。
+- 將記憶保留與刪除設計成明確的資料生命週期操作。
+- 將搜尋 Provider 細節封裝，避免對話流程直接耦合外部服務。
 
-### Preventing cross-session confusion
+## 九、可靠性與安全性
 
-The system must not answer the wrong room, reuse another resident's transcript or allow an old socket to terminate a newer conversation. I strengthened identity, expiry and generation ownership checks.
+- Session 與 Identity 驗證
+- Reconnect 與 Stale Socket 處理
+- Request 與 Socket 限制
+- Container Memory 與 Log 限制
+- Care Panel Authorization
+- Retention 與資料刪除
+- Outbound Tool Argument 保護
+- External Provider Failure State
 
-### Making complex controls usable
-
-Voice settings, pacing, calibration, reading modes and replay behavior need to be understandable for older users. I simplified the interaction patterns and improved state feedback.
-
-## 8. Technical Decisions
-
-- Treat every conversation turn and generation as an explicit unit.
-- Scope playback and cancellation to the generation that created it.
-- Preserve session context across reconnects while keeping authorization boundaries.
-- Keep memory retention and deletion as explicit data lifecycle operations.
-- Place shared web search behind the common platform instead of coupling each application to a provider.
-
-## 9. Important Flows
-
-- Voice input to spoken response: [Voice agent pipeline](diagrams/voice-agent-pipeline.svg)
-- Agent decision and tool execution: [Agent runtime](diagrams/agent-runtime.svg)
-
-## 10. Reliability & Security
-
-- Session and identity validation
-- Reconnect and stale-socket handling
-- Request and socket limits
-- Container memory and log limits
-- Care-panel authorization
-- Retention and resident deletion
-- Outbound tool argument protection
-- External provider failure states
-
-## 11. External Integrations
-
-- LIFF / LINE Login
-- Speech recognition
-- LLM provider
-- Text-to-speech provider
-- Shared AI search platform
-- PostgreSQL and Redis
-
-## 12. Screenshots
-
-The following are recreated, sanitized demo interfaces for portfolio presentation:
+## 十、重製畫面
 
 - [Voice Conversation](screenshots/conversation.svg)
 - [Voice Settings](screenshots/voice-settings.svg)
 
-They use sample data and are not production screenshots.
+以上均為去識別化重製畫面，使用範例資料，不是正式客戶截圖。
 
-## 13. Trade-offs & Limitations
+## 十一、取捨與限制
 
-Realtime voice quality depends on browser permissions, network conditions and external speech providers. The case study focuses on application-level orchestration and recovery behavior, not on claiming a particular provider's production SLA.
+即時語音品質會受到瀏覽器權限、網路與外部語音服務影響。本案例聚焦於應用程式層的流程協調與恢復行為，不宣稱第三方 Provider 的正式 SLA。
 
-## 14. Outcome
+## 十二、成果
 
-The selected work turned the voice assistant from a simple interaction into a stateful conversation runtime with reconnect handling, playback control, memory boundaries and care-oriented access patterns.
+將語音助手從單純互動擴展為具備狀態管理、斷線恢復、播放控制、記憶邊界與照護權限的對話 Runtime。
 
-## 15. What I Learned
+## 十三、學習
 
-This project made realtime systems feel concrete: correctness depends not only on model output, but also on ownership, cancellation, timing, resource limits and the user's ability to understand the current state.
+這個專案讓我實際理解即時系統的正確性不只取決於模型輸出，也取決於擁有權、取消、時序、資源限制與使用者能否理解目前狀態。
 
-## 16. Confidentiality
+## 保密聲明
 
-This is a commercial project.
-
-Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
+這是商業專案。公開內容不包含正式原始碼、憑證、個人資料或專有商業資訊。

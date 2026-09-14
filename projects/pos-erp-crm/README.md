@@ -1,152 +1,120 @@
-# POS / ERP / CRM Platform
+# POS / ERP / CRM 平台
 
-[繁體中文](README.zh-TW.md)
+[English](README.en.md)
 
-**Period:** 2026/05 – Present<br>
-**Type:** Commercial / Full-time<br>
-**Role:** Full-stack Engineer<br>
-**Focus:** Legacy Modernization · ERP · Domain Modeling · System Integration
+**期間：** 2026/03 – 2026/09<br>
+**專案類型：** 商業專案／全職工作<br>
+**角色：** Full-stack Engineer<br>
+**重點：** Legacy Modernization · ERP · 領域建模 · 系統整合
 
-## 1. Overview
+## 一、專案概述
 
-A multi-store POS and business operations platform covering catalog, purchasing, inventory, manufacturing, sales, finance and CRM integration.
+多門市 POS、進銷存、製造、財務與 CRM 整合平台。
 
-This case study focuses on selected engineering work completed from **May 2026 to the present**, not the complete commercial system.
+本案例只展示我負責的特定功能與工程決策，不包含完整商業系統。
 
-## 2. Project Context
+## 二、專案背景
 
-The original system grew from core POS and financial workflows. As the business expanded into multi-store operations, warehouse transfers, manufacturing, item variants, BOM and CRM synchronization, the existing domain model and operational flows needed to be reorganized.
+原有系統以 POS 與財務流程為主，後續增加多門市、倉庫調撥、商品變體、BOM、製造與 CRM 同步需求，因此需要重新整理既有資料模型與業務流程。
 
-## 3. My Role
+## 三、我的角色
 
-**Full-stack Engineer**
+我負責前後端開發、領域與資料建模、Legacy 流程重構、庫存與製造邏輯、POS 與 CRM 整合、部署腳本、問題排查與測試驗證。
 
-I worked across:
+## 四、負責範圍
 
-- Backend and frontend development
-- Domain and database modeling
-- Legacy workflow refactoring
-- Inventory and manufacturing logic
-- POS-to-CRM integration
-- Deployment scripts and troubleshooting
-- UI consistency and test verification
+- 整理商品、原料、分類與 Variant 資料模型
+- 實作多層 BOM 展開與製造流程
+- 處理採購、進貨、銷售、退貨、出貨、調撥與多倉庫庫存異動
+- 整合財務、成本追蹤、多門市管理與交易回復流程
+- 建立成本歷史與庫存變更記錄
+- 開發條碼收貨與主檔資料匯入
+- 建立 POS 與 CRM 商品、分類、原料及交易同步
+- 使用 Outbox、Queue、Retry 與 Idempotency 處理跨系統同步
+- 改善員工、報表、會計與營運管理介面
+- 維護多門市部署與環境同步腳本
 
-## 4. Scope & Responsibilities
+## 五、技術環境
 
-Selected responsibilities included:
+- Backend：Laravel、PHP
+- Frontend：HTML、JavaScript、Bootstrap-based UI
+- Database：MySQL
+- Integration：REST API、Database Queue、Outbox
+- Runtime：Apache、Scheduler、Queue Worker、Print Adapter
 
-- Consolidating item, ingredient, category and variant behavior
-- Implementing parent-child item and variant workflows
-- Designing multi-level BOM traversal and manufacturing flows
-- Handling purchasing, receiving, sales, shipping and warehouse transfers
-- Recording item cost history and inventory changes
-- Building barcode receiving and master-data import workflows
-- Adding POS-to-CRM catalog and transaction synchronization
-- Maintaining outbox, queue, retry and duplicate-event protection
-- Improving employee, report, accounting and operations interfaces
-- Maintaining multi-store deployment and environment synchronization scripts
+**skills:** PHP, Laravel, JavaScript, MySQL, REST API, Multi-tenant, RBAC, Outbox Pattern, Queue, Idempotency, HMAC
 
-## 5. Tech Stack
+外部整合包含 Google Calendar 雙向預約、電商訂單匯入、條碼收貨、LINE OA 出勤、電子發票，以及 USB／Wi-Fi 收據列印。
 
-**Backend**  
-Laravel, PHP
+## 六、系統架構
 
-**Frontend**  
-HTML, JavaScript, Bootstrap-based operational interfaces
+![POS / ERP / CRM 架構](diagrams/system-architecture.svg)
 
-**Database**  
-MySQL
+- [Mermaid 原始圖](diagrams/system-architecture.mmd)
+- [POS 與 CRM 同步流程](diagrams/pos-crm-sync.svg)
+- [Item / BOM 領域模型](diagrams/item-bom-domain.svg)
+- [製造流程](diagrams/manufacturing-flow.svg)
 
-**Integration**  
-REST APIs, database queue, Outbox pattern, POS-to-CRM synchronization
+## 七、主要工程挑戰
 
-**Runtime**  
-Apache, scheduled tasks, queue workers, print and external-device adapters
+### 統一商品與庫存概念
 
-## 6. System Architecture
+商品、原料、Variant 與 Legacy item 原本有不同的資料假設。我重新整理資料流，使採購、庫存、銷售、製造與外部同步可以使用一致的領域規則。
 
-![POS / ERP / CRM architecture](diagrams/system-architecture.svg)
+### 維持庫存一致性
 
-[View Mermaid source](diagrams/system-architecture.mmd)
+製造、進貨、出貨、調撥與調整都可能影響相同庫存。我追蹤各種狀態轉換，處理重複扣庫存、漏扣庫存、成本記錄與調撥完成等問題。
 
-## 7. Key Engineering Challenges
+### 表達多層 BOM 關係
 
-### Unifying item and inventory concepts
+BOM 可能包含巢狀元件與重複品項，因此使用樹狀走訪與排序，讓父子關係能正確呈現並支援後續製造與庫存作業。
 
-Products, ingredients, variants and legacy item records had different assumptions. I reorganized the data flow so purchasing, inventory, sales, manufacturing and external synchronization could use consistent domain rules.
+### POS 與 CRM 同步
 
-### Preserving inventory consistency
+POS 的主要交易流程不能依賴 CRM 立即可用，因此將資料異動與背景同步拆開，並建立可追蹤的重試與冪等邊界。
 
-Manufacturing, receiving, shipping, transfer and adjustment operations can affect the same stock records. I traced status transitions and corrected cases involving duplicate deduction, missing deduction, cost history and transfer completion.
+## 八、技術決策
 
-### Representing multi-level BOM relationships
+- 使用 Outbox，避免 POS 主交易流程依賴 CRM 即時可用。
+- 明確區分 POS 擁有的欄位，避免外部同步覆蓋錯誤資料。
+- 將庫存變更限制在明確的業務流程與狀態中。
+- 使用樹狀走訪處理 BOM，而非依賴資料庫平面排序。
+- 由目前部署網址推導 API 來源，避免寫死單一主機。
 
-A BOM may contain nested components and repeated items. I implemented tree-based traversal and ordering so parent-child relationships remain understandable to operators and usable by downstream inventory processes.
+## 九、可靠性與安全性
 
-### Synchronizing with CRM
-
-POS changes must be delivered to another system without blocking the main operation. I separated business writes from synchronization work and added observable retry and idempotency boundaries.
-
-## 8. Technical Decisions
-
-- Use an Outbox boundary so a local POS transaction is not dependent on immediate CRM availability.
-- Treat POS as the source for POS-owned operational fields and prevent accidental overwrites from another system.
-- Keep inventory-changing operations explicit by workflow and status.
-- Use tree traversal for BOM presentation and processing instead of relying on flat query order.
-- Derive frontend API origin from the current deployment context instead of hardcoding one host.
-
-## 9. Important Flows
-
-- Catalog and item synchronization: [POS-to-CRM sync](diagrams/pos-crm-sync.svg)
-- Item and BOM relationships: [Item/BOM domain](diagrams/item-bom-domain.svg)
-- Manufacturing and inventory movement: [Manufacturing flow](diagrams/manufacturing-flow.svg)
-
-## 10. Reliability & Security
-
-- Tenant and store scope checks
+- 租戶與門市範圍檢查
 - Queue-based integration
-- Retry and duplicate-event protection
-- Explicit inventory reservation and deduction boundaries
-- CSRF and security-header handling
-- Safe import validation
-- Deployment cache and route refresh procedures
+- Retry 與重複事件防護
+- 庫存預留與扣除邊界
+- CSRF 與 Security Headers
+- 匯入資料驗證
+- 部署後快取與路由更新
 
-RFID UI and data flow are documented as an integration boundary. Physical reader input is not presented as completed production validation. Payment adapters are also excluded from any claim of formal payment UAT.
+RFID 實體讀卡器與付款流程僅記錄為整合邊界，不宣稱已完成正式硬體或付款 UAT。
 
-## 11. External Integrations
-
-- CRM APIs
-- Printing and print-agent boundary
-- RFID integration boundary
-- External attendance
-- Import and synchronization tools
-
-## 12. Screenshots
-
-The following are recreated, sanitized demo interfaces for portfolio presentation:
+## 十、重製畫面
 
 - [POS Operations Dashboard](screenshots/pos-dashboard.svg)
 - [BOM Editor](screenshots/bom-editor.svg)
 - [Manufacturing Order](screenshots/manufacturing-order.svg)
 
-They use sample data and are not production screenshots.
+以上均為去識別化重製畫面，使用範例資料，不是正式客戶截圖。
 
-## 13. Trade-offs & Limitations
+## 十一、取捨與限制
 
-The case study describes selected commercial functionality. Production hostnames, source code, credentials, customer data and formal deployment evidence are intentionally excluded.
+本案例只描述特定商業功能。正式網址、原始碼、憑證、客戶資料與正式部署證據不公開。
 
-Some external integrations require hardware, payment-provider or production-environment validation and are therefore marked as pending rather than presented as completed outcomes.
+需要實體設備、付款服務商或正式資料驗證的功能，會標示為待驗證，不當作已完成的正式成果。
 
-## 14. Outcome
+## 十二、成果
 
-The selected work extended the platform from basic POS operations into a broader set of store, warehouse, manufacturing and CRM workflows while making the integration boundary more explicit and maintainable.
+將平台從基本 POS 作業延伸至門市、倉庫、製造與 CRM 整合流程，並讓跨系統同步邊界更清楚、更容易維護。
 
-## 15. What I Learned
+## 十三、學習
 
-This work strengthened my understanding of legacy domain refactoring, inventory consistency, manufacturing data modeling and the practical trade-offs involved in synchronizing business systems.
+這個專案讓我實際處理 Legacy 領域重構、庫存一致性、製造資料建模與商業系統同步的工程取捨。
 
-## 16. Confidentiality
+## 保密聲明
 
-This is a commercial project.
-
-Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
+這是商業專案。公開內容不包含正式原始碼、憑證、客戶資料或專有商業資訊。

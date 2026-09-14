@@ -1,142 +1,110 @@
-# Factory Pro Chinese
+# Factory Pro Chinese 工廠學習平台
 
-[繁體中文](README.zh-TW.md)
+[English](README.en.md)
 
-**Period:** 2026/05 – Present<br>
-**Type:** Commercial / Full-time<br>
-**Role:** Full-stack Engineer<br>
-**Focus:** Next.js · NestJS · Learning Platform · Multi-tenancy · Analytics
+**期間：** 2026/06 – 2026/07<br>
+**專案類型：** 商業專案／全職工作<br>
+**角色：** Full-stack Engineer<br>
+**重點：** Next.js · NestJS · Learning Platform · Multi-tenancy · Analytics
 
-## 1. Overview
+## 一、專案概述
 
-A multi-tenant learning platform for enterprise training, course delivery, learning progress and administrative analytics.
+支援企業訓練、課程學習、學習進度與管理分析的多租戶學習平台。
 
-## 2. Project Context
+## 二、專案背景
 
-Factory training involves different enterprises, administrators and learners. The platform needed a consistent learning flow while supporting localized content, progress tracking, engagement features and administrative operations.
+不同企業具有不同的管理者、學員、教材與報表需求，因此平台需要同時支援一致的學習流程、在地化內容、進度追蹤與後台操作。
 
-## 3. My Role
+## 三、我的角色
 
-**Full-stack Engineer**
+我負責學員端與管理後台、Backend API 串接、學習領域邏輯、多租戶驗證、在地化、Analytics、匯入流程與 Docker 部署問題排查。
 
-I worked across:
+## 四、負責範圍
 
-- Student and administrator interfaces
-- Backend API integration
-- Learning-domain logic
-- Multi-tenant authentication
-- Localization
-- Analytics and reporting
-- Import workflows
-- Docker build and deployment troubleshooting
+- 補完學員與後台未完成頁面
+- 實作課程、教材與學習進度
+- 處理經驗值、Streak、推薦、徽章與證書
+- 整合 HSK 詞彙、拼音、注音、越南語近似發音與工廠情境教材
+- 將報表接上實際 Analytics API
+- 建立學員參與度與學習分析
+- 開發批次匯入與管理後台流程
+- 加入多語系內容與後台在地化
+- 修正認證、API Route 與租戶隔離
+- 改善 Validation 與 Modal 確認流程
+- 修正 RWD 與行動版導覽
+- 處理 Container Build、Health Route 與部署設定
 
-## 4. Scope & Responsibilities
+## 五、技術環境
 
-Selected responsibilities included:
+- Frontend：Next.js、React、Tailwind-style UI
+- Backend：NestJS、Node.js
+- Data：PostgreSQL、Redis
+- Integration：Translation、Speech、OCR、Zalo、Push Notification
+- Infrastructure：Docker、CI-oriented Deployment
 
-- Completing unfinished learner and management pages
-- Implementing course, lesson and progress behavior
-- Handling experience, streak, recommendation, badge and certificate flows
-- Connecting reports to real analytics data
-- Adding learner participation and engagement views
-- Building bulk import and administrative content workflows
-- Adding localization and multilingual seed content
-- Fixing authentication, API route and tenant-isolation issues
-- Improving validation and replacing ambiguous browser confirmations with modal flows
-- Fixing responsive layouts and mobile navigation
-- Maintaining container build, health route and deployment configuration
+**skills:** TypeScript, Next.js, NestJS, PostgreSQL, Redis, Docker, Multi-tenant, RBAC, PWA
 
-## 5. Tech Stack
+## 六、系統架構
 
-**Frontend**  
-Next.js, React, Tailwind-style UI
+![Factory Pro Chinese 架構](diagrams/system-architecture.svg)
 
-**Backend**  
-NestJS, Node.js
+- [Mermaid 原始圖](diagrams/system-architecture.mmd)
+- [學習流程](diagrams/learning-flow.svg)
+- [內容匯入](diagrams/content-import.svg)
+- [Tenant / RBAC](diagrams/tenant-rbac.svg)
 
-**Database and Runtime**  
-PostgreSQL, Redis
+## 七、主要工程挑戰
 
-**Integrations**  
-Translation, speech, OCR, Zalo and push notification services
+### 維持學習進度一致
 
-**Infrastructure**  
-Docker and CI-oriented deployment workflows
+課程完成、Lesson Progress、經驗值與 Streak 依賴同一批學習行為。我整理前後端規則，使畫面與 Analytics 使用一致的學習狀態。
 
-## 6. System Architecture
+### 支援企業資料分離
 
-![Factory Pro Chinese architecture](diagrams/system-architecture.svg)
+不同公司需要獨立的使用者、內容與報表，因此將 Tenant Context 貫穿認證、API 與管理流程。
 
-[View Mermaid source](diagrams/system-architecture.mmd)
+### 將報表連接真實資料
 
-## 7. Key Engineering Challenges
+報表不能只是靜態畫面，因此將 Analytics API 接入，並建立學員參與度與學習狀況檢視。
 
-### Keeping learning progress consistent
+### 安全處理批次匯入
 
-Course completion, lesson progress, experience and streak behavior depend on the same learner actions. I traced these rules across frontend and backend so the interface and analytics represent the same learning state.
+課程與學員匯入可能包含格式不完整或不一致資料，因此加入驗證、預覽與結果回饋。
 
-### Supporting enterprise separation
+## 八、技術決策
 
-Different companies require independent users, content and reports. I implemented tenant-aware authentication and data boundaries for learner and administrator workflows.
+- 將學習進度視為 Domain State，而不是只有前端顯示值。
+- 將 Tenant Context 貫穿認證、API 與報表。
+- 透過明確 Validation 處理匯入，不靜默接受錯誤資料。
+- 分離學員互動與管理者分析。
+- 將在地化內容與學習流程放在一致的內容模型中。
 
-### Connecting reporting to real data
+## 九、可靠性與安全性
 
-Reports should describe actual learner behavior rather than static placeholders. I connected analytics APIs and added participation-oriented views for administrators.
+- Authentication 與 Tenant Isolation
+- API Route 與 Identity Validation
+- Input Validation
+- Progress 與 Streak 一致性
+- 安全的管理後台匯入
+- Container Health Check
+- Build 與 Deployment Troubleshooting
 
-### Importing operational content safely
+## 十、重製畫面
 
-Bulk content and learner imports can contain incomplete or inconsistent data. I added validation and administrative flows that make the import outcome visible and easier to recover.
+學員、課程與管理後台畫面會使用範例資料製作，待後續補上。
 
-## 8. Technical Decisions
+## 十一、取捨與限制
 
-- Keep learner progress as a domain state rather than a frontend-only display value.
-- Carry tenant context through authentication, API access and reporting.
-- Use explicit import validation instead of silently accepting malformed content.
-- Separate learner interaction from administrative analytics.
-- Keep localization close to the content and interface workflow.
+本案例聚焦學習與管理功能，不包含正式學員資料、企業身份與 Provider 憑證。
 
-## 9. Important Flows
+## 十二、成果
 
-- Learning and progress: [Learning flow](diagrams/learning-flow.svg)
-- Content and learner import: [Content import](diagrams/content-import.svg)
-- Enterprise access boundaries: [Tenant and RBAC](diagrams/tenant-rbac.svg)
+完成企業學習平台中課程、進度、Analytics、在地化與資料匯入等主要作業流程。
 
-## 10. Reliability & Security
+## 十三、學習
 
-- Authentication and tenant isolation
-- API route and identity validation
-- Input validation
-- Progress and streak consistency
-- Safe administrative imports
-- Container health checks
-- Build and deployment troubleshooting
+這個專案加深我對 Learning Domain、Multi-tenant Product 與真實資料串接的理解。
 
-## 11. External Integrations
+## 保密聲明
 
-- Translation and speech services
-- OCR processing
-- Zalo
-- Push notifications
-- Analytics APIs
-
-## 12. Screenshots
-
-Only sanitized learner, lesson and administrator screens will be included.
-
-## 13. Trade-offs & Limitations
-
-The case study focuses on selected learning and administration features. Production learner data, enterprise identities and provider credentials are excluded.
-
-## 14. Outcome
-
-The selected work completed the learning and administration paths needed to operate an enterprise training platform, including progress, analytics, localization and import workflows.
-
-## 15. What I Learned
-
-This project strengthened my understanding of learning-domain modeling, multi-tenant product behavior and the difference between a visually complete page and a workflow that is connected to real data.
-
-## 16. Confidentiality
-
-This is a commercial project.
-
-Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
+這是商業專案。公開內容不包含正式原始碼、憑證、客戶資料或專有商業資訊。
