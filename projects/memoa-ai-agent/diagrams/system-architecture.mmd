@@ -1,0 +1,9 @@
+flowchart LR
+    resident[Resident / Family UI] --> liff[LIFF / Web Apps]
+    liff --> gateway[Fastify Gateway]
+    gateway --> ws[WebSocket Voice Session]
+    ws --> agent[Agent Runtime]
+    agent --> data[(PostgreSQL / Redis)]
+    agent --> search[Shared Search]
+    agent --> voice[STT / LLM / TTS]
+

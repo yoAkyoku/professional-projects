@@ -1,0 +1,9 @@
+flowchart LR
+    mic[Microphone] --> stt[Speech to Text]
+    stt --> turn[Conversation Turn]
+    turn --> agent[Agent / Tools]
+    agent --> llm[LLM]
+    llm --> tts[Text to Speech]
+    tts --> playback[Audio Playback]
+    playback --> resident[Resident]
+

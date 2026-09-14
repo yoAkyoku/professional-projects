@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant C as Customer
+    participant A as App
+    participant D as Driver
+    participant M as Map Service
+    C->>A: Open permitted tracking view
+    A->>A: Check time and share scope
+    A->>D: Read latest location
+    D-->>A: GPS status
+    A->>M: Render route and markers
+    M-->>C: Show map and trip state
+

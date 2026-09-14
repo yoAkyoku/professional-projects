@@ -1,0 +1,8 @@
+flowchart LR
+    purchase[Purchase / Receiving] --> raw[Raw Materials]
+    raw --> bom[BOM Expansion]
+    bom --> order[Manufacturing Order]
+    order --> consume[Material Consumption]
+    consume --> finished[Finished Product]
+    finished --> inventory[Inventory]
+

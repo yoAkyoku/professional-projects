@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant App as AI Application
+    participant G as Search Gateway
+    participant P as Request Policy
+    participant S as Search Provider
+    participant C as Content Renderer
+    App->>G: Search request
+    G->>P: Validate key, host and limits
+    P-->>G: Allow or reject
+    G->>S: Search
+    S-->>G: Result links
+    G->>C: Retrieve selected content
+    C-->>G: Rendered content
+    G-->>App: Normalized response
+

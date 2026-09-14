@@ -1,0 +1,8 @@
+flowchart TD
+    identity[LINE Identity] --> tenant[Tenant Context]
+    tenant --> policy[Access Policy]
+    policy --> knowledge[Tenant Knowledge]
+    policy --> settings[Tenant Settings]
+    knowledge --> agent[Agent Context]
+    settings --> agent
+

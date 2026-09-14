@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant POS
+    participant DB as POS Database
+    participant O as Outbox
+    participant Q as Queue Worker
+    participant CRM
+    POS->>DB: Save item or transaction
+    DB->>O: Record sync event
+    O->>Q: Dispatch background job
+    Q->>CRM: Send signed request
+    CRM-->>Q: Receipt or error
+    Q->>O: Mark success or retry
+

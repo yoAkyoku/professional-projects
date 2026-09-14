@@ -1,0 +1,10 @@
+flowchart TD
+    item[Item] --> variant[Variant]
+    item --> ingredient[Ingredient]
+    variant --> bom[BOM]
+    ingredient --> bom
+    bom --> component[Child Components]
+    component --> cost[Cost History]
+    bom --> manufacture[Manufacturing Order]
+    manufacture --> stock[Inventory Movement]
+

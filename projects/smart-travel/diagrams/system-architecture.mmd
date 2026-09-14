@@ -1,0 +1,10 @@
+flowchart LR
+    customer[Customer App] --> api[Application APIs]
+    driver[Driver App] --> api
+    staff[Operations Console] --> api
+    api --> order[Order / Dispatch Domain]
+    order --> db[(PostgreSQL / Operational Data)]
+    order --> maps[Maps / GPS]
+    order --> notify[SMS / Push / Slack]
+    api --> ai[AI Assistance]
+

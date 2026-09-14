@@ -1,0 +1,8 @@
+flowchart LR
+    file[Content / Learner File] --> upload[Admin Upload]
+    upload --> validate[Validate and Normalize]
+    validate --> preview[Preview Errors]
+    preview --> commit[Commit Valid Records]
+    commit --> data[(Learning Database)]
+    data --> report[Import Result]
+

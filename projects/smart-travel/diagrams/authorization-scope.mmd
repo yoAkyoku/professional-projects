@@ -1,0 +1,9 @@
+flowchart TD
+    user[Authenticated User] --> role{Role}
+    role --> customer[Customer Scope]
+    role --> driver[Driver Scope]
+    role --> staff[Operations Scope]
+    customer --> own[Own Orders / Tracking]
+    driver --> assigned[Assigned Trips]
+    staff --> operations[Dispatch / Reports / Admin]
+

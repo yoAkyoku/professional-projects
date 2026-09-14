@@ -1,0 +1,10 @@
+flowchart LR
+    user[門市與後台使用者] --> ui[POS Web UI]
+    ui --> app[Laravel Application]
+    app --> domain[Catalog / Sales / Inventory / Manufacturing]
+    domain --> db[(MySQL)]
+    app --> jobs[Queue / Scheduler]
+    jobs --> outbox[Integration Outbox]
+    outbox --> crm[CRM API]
+    app --> adapters[Print / RFID / External Adapters]
+

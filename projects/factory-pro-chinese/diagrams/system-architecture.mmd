@@ -1,0 +1,9 @@
+flowchart LR
+    learner[Learner Web] --> frontend[Next.js Frontend]
+    admin[Admin Console] --> frontend
+    frontend --> api[NestJS API]
+    api --> domain[Learning / Tenant Domain]
+    domain --> db[(PostgreSQL)]
+    api --> redis[(Redis)]
+    api --> integrations[OCR / Speech / Translation / Push]
+

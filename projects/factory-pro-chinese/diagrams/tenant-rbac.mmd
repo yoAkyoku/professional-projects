@@ -1,0 +1,8 @@
+flowchart TD
+    identity[User Identity] --> tenant[Tenant]
+    tenant --> role[Role]
+    role --> learner[Learner Permissions]
+    role --> admin[Administrator Permissions]
+    admin --> content[Content and Reports]
+    learner --> learning[Assigned Learning]
+

@@ -1,0 +1,11 @@
+stateDiagram-v2
+    [*] --> Listening
+    Listening --> Transcribing
+    Transcribing --> Generating
+    Generating --> Playing
+    Playing --> Listening
+    Generating --> Cancelled
+    Playing --> Reconnecting
+    Reconnecting --> Listening
+    Cancelled --> Listening
+

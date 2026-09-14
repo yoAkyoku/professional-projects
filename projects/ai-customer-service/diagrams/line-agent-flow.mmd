@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant L as LINE
+    participant W as Webhook
+    participant A as Agent
+    participant K as Knowledge
+    participant H as Human Support
+    L->>W: Message
+    W->>W: Verify and deduplicate
+    W->>A: Build tenant-aware context
+    A->>K: Retrieve knowledge
+    K-->>A: Ranked context
+    alt Supported answer
+      A-->>L: Send response
+    else Needs support
+      A->>H: Create escalation
+      H-->>L: Send handoff message
+    end
+

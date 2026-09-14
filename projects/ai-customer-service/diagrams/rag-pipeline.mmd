@@ -1,0 +1,9 @@
+flowchart LR
+    question[User Question] --> rewrite[Query Rewrite]
+    rewrite --> vector[Vector Search]
+    rewrite --> lexical[Lexical Search]
+    vector --> merge[Rank Fusion]
+    lexical --> merge
+    merge --> context[Grounded Context]
+    context --> agent[Agent Response]
+
