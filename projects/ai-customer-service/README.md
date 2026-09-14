@@ -1,5 +1,12 @@
 # Multi-tenant AI Customer Service
 
+**Period:** 2026/05 – Present<br>
+**Type:** Commercial / Full-time<br>
+**Role:** AI Application / Backend Engineer<br>
+**Focus:** LangGraph · RAG · Hybrid Retrieval · LINE · Tenant Isolation
+
+> 以 LINE 為入口的多租戶 AI 客服；本頁聚焦 Agent、RAG、知識檢索與人工轉接流程。
+
 ## 1. Overview
 
 A LINE-based intelligent customer service platform that connects messaging, knowledge retrieval, AI agent orchestration and human escalation.
@@ -113,7 +120,13 @@ LLM, embedding and messaging services can fail independently. I added asynchrono
 
 ## 12. Screenshots
 
-Only sanitized conversation, knowledge-base and settings screens will be included.
+The following are recreated, sanitized demo interfaces for portfolio presentation:
+
+- [LINE Conversation](screenshots/line-conversation.svg)
+- [Knowledge Base](screenshots/knowledge-base.svg)
+- [Agent Settings](screenshots/agent-settings.svg)
+
+They use sample data and are not production screenshots.
 
 ## 13. Trade-offs & Limitations
 
@@ -134,4 +147,3 @@ This project deepened my understanding of RAG quality, AI workflow orchestration
 This is a commercial project.
 
 Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
-

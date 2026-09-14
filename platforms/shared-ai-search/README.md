@@ -1,5 +1,12 @@
 # Shared AI Search Infrastructure
 
+**Period:** 2026/05 – Present<br>
+**Type:** Commercial / Platform Engineering<br>
+**Role:** Platform / Integration Engineer<br>
+**Focus:** Search Gateway · SearXNG · Crawl4AI · Request Policy
+
+> 提供多個 AI 應用共用的搜尋與網頁內容服務；本頁聚焦 Gateway 邊界、Provider Adapter 與外部請求治理。
+
 ## 1. Overview
 
 A shared search and web-content platform used by AI applications that need external discovery, page retrieval and normalized content access.
@@ -122,4 +129,3 @@ Platform work is primarily about boundaries: a good shared service reduces dupli
 This is a commercial platform component.
 
 Production source code, credentials, customer data and proprietary infrastructure details are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
-

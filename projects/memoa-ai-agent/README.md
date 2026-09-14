@@ -1,5 +1,12 @@
 # Memoa AI Voice Agent
 
+**Period:** 2026/05 – Present<br>
+**Type:** Commercial / Full-time<br>
+**Role:** Full-stack / AI Application Engineer<br>
+**Focus:** Realtime Voice Agent · WebSocket · STT → LLM → TTS · Privacy
+
+> 即時語音陪伴與照護平台；本頁聚焦語音 Agent Runtime、連線恢復與資料生命週期。
+
 ## 1. Overview
 
 A realtime AI voice companion and care platform that combines conversational voice interaction, memory, knowledge retrieval and family or care-team access.
@@ -115,7 +122,12 @@ Voice settings, pacing, calibration, reading modes and replay behavior need to b
 
 ## 12. Screenshots
 
-Only recreated or sanitized conversation and settings screens will be added.
+The following are recreated, sanitized demo interfaces for portfolio presentation:
+
+- [Voice Conversation](screenshots/conversation.svg)
+- [Voice Settings](screenshots/voice-settings.svg)
+
+They use sample data and are not production screenshots.
 
 ## 13. Trade-offs & Limitations
 
@@ -134,4 +146,3 @@ This project made realtime systems feel concrete: correctness depends not only o
 This is a commercial project.
 
 Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
-

@@ -1,9 +1,19 @@
-flowchart LR
+flowchart TB
+    subgraph ingest[Knowledge Ingestion]
+        source[PDF / DOCX / Markdown] --> parse[Parse / Extract]
+        parse --> clean[OCR Noise Filter / PII Handling]
+        clean --> chunk[Chunking]
+        chunk --> embed[Embedding]
+        embed --> index[(PostgreSQL / pgvector)]
+        clean --> lexicalIndex[(Lexical Index)]
+    end
+
     question[User Question] --> rewrite[Query Rewrite]
     rewrite --> vector[Vector Search]
-    rewrite --> lexical[Lexical Search]
-    vector --> merge[Rank Fusion]
+    rewrite --> lexical[Lexical Search / BM25]
+    vector --> merge[Weighted RRF / Rank Fusion]
     lexical --> merge
+    index --> vector
+    lexicalIndex --> lexical
     merge --> context[Grounded Context]
-    context --> agent[Agent Response]
-
+    context --> agent[LangGraph Agent]

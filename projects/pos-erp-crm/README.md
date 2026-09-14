@@ -1,5 +1,12 @@
 # POS / ERP / CRM Platform
 
+**Period:** 2026/05 – Present<br>
+**Type:** Commercial / Full-time<br>
+**Role:** Full-stack Engineer<br>
+**Focus:** Legacy Modernization · ERP · Domain Modeling · System Integration
+
+> 多門市 POS、進銷存、製造與 CRM 整合平台；本頁只展示我負責的特定功能與工程決策。
+
 ## 1. Overview
 
 A multi-store POS and business operations platform covering catalog, purchasing, inventory, manufacturing, sales, finance and CRM integration.
@@ -116,7 +123,13 @@ RFID UI and data flow are documented as an integration boundary. Physical reader
 
 ## 12. Screenshots
 
-Screenshots will be added only after replacing all customer, store, product and transaction data with safe demo data.
+The following are recreated, sanitized demo interfaces for portfolio presentation:
+
+- [POS Operations Dashboard](screenshots/pos-dashboard.svg)
+- [BOM Editor](screenshots/bom-editor.svg)
+- [Manufacturing Order](screenshots/manufacturing-order.svg)
+
+They use sample data and are not production screenshots.
 
 ## 13. Trade-offs & Limitations
 
@@ -137,4 +150,3 @@ This work strengthened my understanding of legacy domain refactoring, inventory 
 This is a commercial project.
 
 Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
-

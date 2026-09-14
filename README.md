@@ -19,6 +19,15 @@ The case studies cover work from **May 2026 to the present**.
 
 ## Selected Projects
 
+| Project | Role | Main Engineering Focus |
+| --- | --- | --- |
+| POS / ERP / CRM | Full-stack Engineer | Domain Modeling, BOM, Inventory, Outbox |
+| AI Customer Service | AI / Backend Engineer | LangGraph, RAG, Hybrid Retrieval |
+| Memoa | Full-stack / AI Engineer | Realtime Voice Agent, WebSocket |
+| Smart Travel | Full-stack Engineer | Web / Mobile, Dispatch, GPS |
+| Factory Pro Chinese | Full-stack Engineer | Multi-tenant Learning Platform |
+| Shared AI Search | Platform Engineer | Search Gateway, SearXNG, Crawl4AI |
+
 ### POS / ERP / CRM Platform
 
 Selected features from a multi-store POS, inventory, manufacturing, finance and CRM platform.
@@ -115,4 +124,3 @@ This repository does **not** contain:
 - Unmasked screenshots or logs
 
 Architecture diagrams, screenshots and implementation descriptions have been simplified or anonymized for portfolio presentation.
-

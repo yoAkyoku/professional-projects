@@ -26,12 +26,11 @@
   <path d="M308 312 L325 312" class="arrow"/>
 <path d="M578 312 L595 312" class="arrow"/>
 <path d="M848 312 L865 312" class="arrow"/>
-  <g><rect x="65" y="250" width="235" height="125" rx="18" class="node"/><text x="85" y="284" class="nodeNo">01</text><text x="85" y="311" class="nodeText">Users and POS UI</text></g>
-<g><rect x="335" y="250" width="235" height="125" rx="18" class="node"/><text x="355" y="284" class="nodeNo">02</text><text x="355" y="311" class="nodeText">Laravel domain services</text></g>
-<g><rect x="605" y="250" width="235" height="125" rx="18" class="node"/><text x="625" y="284" class="nodeNo">03</text><text x="625" y="311" class="nodeText">MySQL and operational state</text></g>
-<g><rect x="875" y="250" width="235" height="125" rx="18" class="node"/><text x="895" y="284" class="nodeNo">04</text><text x="895" y="311" class="nodeText">Queue, Outbox and CRM adapters</text></g>
+  <g><rect x="65" y="250" width="235" height="125" rx="18" class="node"/><text x="85" y="284" class="nodeNo">01</text><text x="85" y="311" class="nodeText">POS Web / users</text></g>
+<g><rect x="335" y="250" width="235" height="125" rx="18" class="node"/><text x="355" y="284" class="nodeNo">02</text><text x="355" y="311" class="nodeText">Laravel domain modules</text></g>
+<g><rect x="605" y="250" width="235" height="125" rx="18" class="node"/><text x="625" y="284" class="nodeNo">03</text><text x="625" y="311" class="nodeText">MySQL / POS state</text></g>
+<g><rect x="875" y="250" width="235" height="125" rx="18" class="node"/><text x="895" y="284" class="nodeNo">04</text><text x="895" y="311" class="nodeText">Outbox → Queue → CRM</text></g>
   <line x1="65" y1="500" x2="1135" y2="500" stroke="#cbd5e1"/>
   <text x="65" y="540" class="note">Public-safe conceptual view</text>
   <text x="65" y="575" class="note">Public-safe conceptual diagram · production hosts, credentials and customer data omitted</text>
 </svg>
-

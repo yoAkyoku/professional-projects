@@ -1,5 +1,12 @@
 # Factory Pro Chinese
 
+**Period:** 2026/05 – Present<br>
+**Type:** Commercial / Full-time<br>
+**Role:** Full-stack Engineer<br>
+**Focus:** Next.js · NestJS · Learning Platform · Multi-tenancy · Analytics
+
+> 企業員工學習平台；本頁聚焦學習進度、內容匯入、報表與租戶權限。
+
 ## 1. Overview
 
 A multi-tenant learning platform for enterprise training, course delivery, learning progress and administrative analytics.
@@ -133,4 +140,3 @@ This project strengthened my understanding of learning-domain modeling, multi-te
 This is a commercial project.
 
 Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
-

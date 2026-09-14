@@ -1,5 +1,12 @@
 # Smart Travel Platform
 
+**Period:** 2026/05 – Present<br>
+**Type:** Commercial / Full-time<br>
+**Role:** Full-stack Engineer<br>
+**Focus:** Next.js · Expo · Dispatch · GPS · Authentication
+
+> 連接客戶、營運人員與司機的旅運協作平台；本頁聚焦訂單生命週期、派車、GPS 與角色邊界。
+
 ## 1. Overview
 
 A travel operations and dispatch platform connecting customers, operations staff, drivers and trip tracking.
@@ -116,7 +123,12 @@ Several screens existed before their API and state behavior were complete. I con
 
 ## 12. Screenshots
 
-Only sanitized dispatch, driver and tracking screens will be included.
+The following are recreated, sanitized demo interfaces for portfolio presentation:
+
+- [Dispatch Dashboard](screenshots/dispatch-dashboard.svg)
+- [Driver Tracking](screenshots/driver-tracking.svg)
+
+They use sample data and are not production screenshots.
 
 ## 13. Trade-offs & Limitations
 
@@ -137,4 +149,3 @@ This project reinforced that multi-role products are primarily state and permiss
 This is a commercial project.
 
 Production source code, credentials, customer data and proprietary business information are not included. Architecture and implementation details have been simplified or anonymized for portfolio presentation.
-

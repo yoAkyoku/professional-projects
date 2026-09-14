@@ -1,10 +1,19 @@
-flowchart LR
-    customer[Customer App] --> api[Application APIs]
-    driver[Driver App] --> api
-    staff[Operations Console] --> api
-    api --> order[Order / Dispatch Domain]
-    order --> db[(PostgreSQL / Operational Data)]
+flowchart TB
+    staff[Operations Console / Next.js] --> api[Application API]
+    driver[Driver App / Expo] --> api
+    customer[Customer App / Expo] --> api
+
+    api --> auth[Auth / Role Scope]
+    auth --> order[Order / Dispatch Domain]
+    order --> prisma[Prisma Data Access]
+    prisma --> db[(PostgreSQL / Operational Data)]
+
     order --> maps[Maps / GPS]
     order --> notify[SMS / Push / Slack]
     api --> ai[AI Assistance]
 
+    subgraph clients[Client Boundaries]
+        staff
+        driver
+        customer
+    end
