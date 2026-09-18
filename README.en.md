@@ -23,13 +23,13 @@ The case studies cover commercial development work from **March 2026 to Septembe
 
 | Project | Role | Main Engineering Focus |
 | --- | --- | --- |
-| POS / ERP / CRM | Full-stack Engineer | Domain Modeling, BOM, Inventory, Outbox |
-| AI Customer Service | AI / Backend Engineer | LangGraph, RAG, Hybrid Retrieval |
-| Memoa | Full-stack / AI Engineer | Realtime Voice Agent, WebSocket |
-| Smart Travel | Full-stack Engineer | Web / Mobile, Dispatch, GPS |
-| Factory Pro Chinese | Full-stack Engineer | Multi-tenant Learning Platform |
+| Multi-store POS / ERP / CRM Integration Platform | Full-stack Engineer | Catalog, BOM, Inventory, Manufacturing, Sync |
+| Guesthouse AI Support & Knowledge Platform | AI / Backend Engineer | LINE OA, Intent Routing, RAG, Hybrid Retrieval |
+| Companion AI Voice & Agent Platform | Full-stack / AI Engineer | Realtime Voice, WebSocket, Agent Runtime |
+| Travel Operations & Dispatch Platform | Full-stack Engineer | Orders, Dispatch, GPS, Mobile |
+| Workplace Chinese Learning Platform | Full-stack Engineer | Multi-tenancy, Localization, Imports, Analytics |
 
-### POS / ERP / CRM Platform
+### Multi-store POS / ERP / CRM Integration Platform
 
 Selected features from a multi-store POS, inventory, manufacturing, finance and CRM platform.
 
@@ -37,29 +37,29 @@ Selected features from a multi-store POS, inventory, manufacturing, finance and 
 Legacy modernization · Domain modeling · BOM · Inventory · Manufacturing ·
 Multi-tenancy · POS-to-CRM integration · Reliability
 
-[View Case Study](./projects/pos-erp-crm/README.md)
+[View Case Study](./projects/multi-store-pos-erp-crm/README.en.md)
 
-### Multi-tenant AI Customer Service
+### Guesthouse AI Support & Knowledge Platform
 
-LINE-based AI customer service with LangGraph, RAG and hybrid retrieval.
+LINE-based AI support for guesthouse questions, room information and booking-related conversations.
 
 **Focus:**  
 AI Agent · RAG · PostgreSQL · Vector Search · BM25 · LINE ·
 Knowledge Base · Human Escalation
 
-[View Case Study](./projects/ai-customer-service/README.md)
+[View Case Study](./projects/guesthouse-ai-support/README.en.md)
 
-### Memoa AI Voice Agent
+### Companion AI Voice & Agent Platform
 
-Realtime voice companion and care platform with STT, LLM and TTS.
+Realtime companion voice application with STT, LLM, TTS and session-aware agent behavior.
 
 **Focus:**  
 Voice AI · WebSocket · Agent Runtime · Memory · Privacy · Search ·
 Reconnect Handling
 
-[View Case Study](./projects/memoa-ai-agent/README.md)
+[View Case Study](./projects/companion-ai-platform/README.en.md)
 
-### Smart Travel Platform
+### Travel Operations & Dispatch Platform
 
 Travel operations and dispatch platform for staff, drivers and customers.
 
@@ -67,31 +67,27 @@ Travel operations and dispatch platform for staff, drivers and customers.
 Next.js · Expo · Dispatch · GPS · Mobile · Authentication ·
 Order Lifecycle · AI Assistance
 
-[View Case Study](./projects/smart-travel/README.md)
+[View Case Study](./projects/travel-operations-dispatch/README.en.md)
 
-### Factory Pro Chinese
+### Workplace Chinese Learning Platform
 
-Multi-tenant learning platform for factory workers and enterprise administrators.
+Multi-tenant Chinese learning platform for factory workers and enterprise administrators.
 
 **Focus:**  
 Next.js · NestJS · PostgreSQL · Learning Platform · Analytics ·
 Multilingual Content · Import Workflows
 
-[View Case Study](./projects/factory-pro-chinese/README.md)
+[View Case Study](./projects/workplace-chinese-learning/README.en.md)
 
 ## How to Read a Case Study
 
-Each case study documents selected functionality instead of the entire application:
+Each case study documents selected work instead of the entire application. The structure varies by project, but usually covers:
 
-1. Project context
-2. My responsibilities
-3. Selected feature scope
-4. Architecture diagram
-5. Important flow
-6. Engineering challenges
-7. Technical decisions
-8. Reliability and security considerations
-9. Trade-offs and limitations
+1. Starting situation
+2. What I worked on
+3. Problems and decisions
+4. Architecture, flows and recreated screens
+5. Trade-offs, limitations and public-safe scope
 
 Each Mermaid diagram has an accompanying SVG export:
 
@@ -114,6 +110,6 @@ This repository does **not** contain:
 - Customer information
 - Internal infrastructure addresses
 - Confidential business rules
-- Unmasked screenshots or logs
+- Unmasked production logs or data
 
-Architecture diagrams, screenshots and implementation descriptions have been simplified or anonymized for portfolio presentation.
+Architecture diagrams and implementation descriptions have been simplified or anonymized for portfolio presentation.

@@ -1,9 +1,0 @@
-flowchart LR
-    line[LINE User] --> webhook[Webhook]
-    webhook --> api[FastAPI]
-    api --> agent[LangGraph Agent]
-    agent --> rag[RAG / Hybrid Retrieval]
-    agent --> human[Human Escalation]
-    rag --> db[(PostgreSQL / pgvector)]
-    agent --> providers[LLM / Notification Providers]
-

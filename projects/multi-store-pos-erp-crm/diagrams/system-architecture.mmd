@@ -1,0 +1,49 @@
+flowchart TB
+    subgraph clients[Client Layer]
+        user[Store and admin users]
+        ui[POS Web UI]
+    end
+
+    subgraph application[Application Layer]
+        app[Laravel Application]
+    end
+
+    subgraph domain[Domain Layer]
+        catalog[Catalog / Item / Variant]
+        operations[Sales / Inventory / Purchasing]
+        manufacturing[Manufacturing / BOM]
+    end
+
+    subgraph reliability[Integration and Reliability Layer]
+        outbox[Integration Outbox]
+        queue[Queue Worker]
+        retry[Retry / Backoff / Idempotency]
+        sync[POS-to-CRM Sync Worker]
+        scheduler[Scheduler]
+    end
+
+    subgraph storage[Data and External Systems]
+        db[(POS MySQL)]
+        crmApi[CRM API]
+        crmDb[(CRM Database)]
+        tenant[Multi-tenant Domain]
+        adapters[Print / RFID / External Adapters]
+    end
+
+    user --> ui
+    ui --> app
+    app --> catalog
+    app --> operations
+    app --> manufacturing
+    catalog --> db
+    operations --> db
+    manufacturing --> db
+    app --> outbox
+    outbox --> queue
+    queue --> retry
+    retry --> sync
+    sync --> crmApi
+    crmApi --> crmDb
+    crmApi --> tenant
+    app --> adapters
+    scheduler --> queue

@@ -1,0 +1,24 @@
+flowchart TB
+    subgraph clients[Client Layer]
+        resident[Resident / Family UI] --> liff[LIFF / Web Apps]
+    end
+
+    subgraph realtime[Edge and Realtime Layer]
+        gateway[Fastify Gateway] --> ws[WebSocket Voice Session]
+    end
+
+    subgraph application[Application Layer]
+        agent[Agent Runtime]
+    end
+
+    subgraph services[AI Services and Data Layer]
+        voice[STT / LLM / TTS]
+        search[External Search Adapter]
+        data[(PostgreSQL / Redis)]
+    end
+
+    liff --> gateway
+    ws --> agent
+    agent --> voice
+    agent --> search
+    agent --> data

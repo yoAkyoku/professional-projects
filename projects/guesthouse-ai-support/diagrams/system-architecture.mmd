@@ -1,0 +1,29 @@
+flowchart TB
+    subgraph channel[Channel Layer]
+        line[Guest / LINE User]
+    end
+
+    subgraph edge[Webhook Layer]
+        webhook[LINE Webhook]
+    end
+
+    subgraph application[Application Layer]
+        api[FastAPI API] --> agent[LangGraph Agent]
+    end
+
+    subgraph knowledge[Knowledge Layer]
+        rag[RAG / Hybrid Retrieval]
+        db[(PostgreSQL / pgvector)]
+    end
+
+    subgraph operations[Human and Provider Layer]
+        human[Human Escalation]
+        providers[LLM / Messaging Providers]
+    end
+
+    line --> webhook
+    webhook --> api
+    agent --> rag
+    agent --> human
+    agent --> providers
+    rag --> db

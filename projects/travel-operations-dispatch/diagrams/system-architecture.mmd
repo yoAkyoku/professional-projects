@@ -1,0 +1,37 @@
+flowchart TB
+    subgraph clients[Client Layer]
+        staff[Operations Console / Next.js]
+        driver[Driver App / Expo]
+        customer[Customer App / Expo]
+    end
+
+    subgraph application[Application Layer]
+        api[Application API]
+        auth[Auth / Role Scope]
+    end
+
+    subgraph domain[Domain Layer]
+        order[Order / Dispatch Domain]
+    end
+
+    subgraph data[Data and Integration Layer]
+        prisma[Prisma Data Access]
+        db[(PostgreSQL / Operational Data)]
+        maps[Maps / GPS]
+        notify[SMS / Push / Slack]
+    end
+
+    subgraph aiLayer[AI Assistance Layer]
+        ai[AI Assistance]
+    end
+
+    staff --> api
+    driver --> api
+    customer --> api
+    api --> auth
+    auth --> order
+    order --> prisma
+    prisma --> db
+    order --> maps
+    order --> notify
+    api --> ai

@@ -1,0 +1,31 @@
+flowchart TB
+    subgraph clients[Client Layer]
+        learner[Learner Web]
+        admin[Admin Console]
+    end
+
+    subgraph presentation[Presentation Layer]
+        frontend[Next.js Frontend]
+    end
+
+    subgraph application[Application Layer]
+        api[NestJS API]
+    end
+
+    subgraph domain[Domain Layer]
+        learning[Learning / Tenant Domain]
+    end
+
+    subgraph runtime[Data and Integration Layer]
+        db[(PostgreSQL)]
+        redis[(Redis)]
+        integrations[Localization / Excel Import / Analytics]
+    end
+
+    learner --> frontend
+    admin --> frontend
+    frontend --> api
+    api --> learning
+    learning --> db
+    api --> redis
+    api --> integrations
