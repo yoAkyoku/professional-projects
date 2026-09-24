@@ -79,6 +79,16 @@ Multilingual Content · Import Workflows
 
 [View Case Study](./projects/workplace-chinese-learning/README.en.md)
 
+## Independent Project
+
+### SUCRÉ Patisserie WooCommerce Store
+
+A self-initiated WordPress + WooCommerce portfolio build translating a design into a responsive storefront with a custom theme, custom plugin, Docker Compose, and a local checkout journey. This is an **independent demo, not a client engagement**.
+
+**Focus:** WordPress · WooCommerce · Custom Theme / Plugin · Docker Compose · Responsive UI · Store API · Checkout Blocks
+
+[View Case Study](./projects/sucre-woocommerce/README.en.md)
+
 ## How to Read a Case Study
 
 Each case study documents selected work instead of the entire application. The structure varies by project, but usually covers:

@@ -37,6 +37,16 @@
 - [智慧旅運訂單與派車平台](projects/travel-operations-dispatch/README.md)
 - [工廠中文學習與企業管理平台](projects/workplace-chinese-learning/README.md)
 
+## 個人作品
+
+### SUCRÉ 客製甜點電商
+
+以設計稿實作的 WordPress + WooCommerce 個人作品，展示自訂 Theme／Plugin、Docker、響應式商品頁與本機購物流程；此案例為自發展示作品，**不是客戶商業專案**。
+
+**重點：** WordPress · WooCommerce · Custom Theme / Plugin · Docker Compose · RWD · Store API · Checkout Blocks
+
+[案例研究](./projects/sucre-woocommerce/README.md)
+
 ## 如何閱讀
 
 每篇會依專案的實際工作內容整理，通常會包含：
