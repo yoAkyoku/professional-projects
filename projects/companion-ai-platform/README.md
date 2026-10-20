@@ -47,11 +47,11 @@ MCP、Tools、Skills、Knowledge Base 和外部搜尋不是每個情境都要開
 
 ## 畫面展示
 
-以下畫面展示陪伴型 AI 的語音入口、文字互動與回憶功能；未包含正式使用者資料或服務品牌。
+以下為依專案功能構想製作的 AI 生成介面示意圖，並非產品實機截圖，也不代表圖中所有畫面或功能均已交付；未包含正式使用者資料或服務品牌。
 
-![陪伴型 AI 首頁](screenshots/companion-home.png)
+![陪伴型 AI 語音入口介面示意圖（AI 生成，非實際產品畫面）](screenshots/companion-home.png)
 
-![陪伴型 AI 文字對話](screenshots/companion-chat.png)
+![陪伴型 AI 對話氣泡介面示意圖（AI 生成，對話內容為虛構）](screenshots/companion-chat.png)
 
 ## 技術
 

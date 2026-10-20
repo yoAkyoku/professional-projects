@@ -45,15 +45,15 @@ MCP, tools, skills, knowledge bases and external search should not be enabled in
   - [Agent runtime](diagrams/agent-runtime.svg)
   - [Mermaid source](diagrams/system-architecture.mmd)
 
-  ## Screenshots
+## Interface concepts
 
-  These screenshots show the companion AI voice entry point, text interaction and memory-oriented UI without production user data or service branding.
+These AI-generated interface concepts are based on the project scope. They are not screenshots of the implemented product and do not imply that every depicted screen or feature has shipped. No production user data or service branding is included.
 
-  ![Companion AI home](screenshots/companion-home.png)
+![Companion AI voice-entry interface concept (AI-generated, not an actual product screenshot)](screenshots/companion-home.png)
 
-  ![Companion AI text conversation](screenshots/companion-chat.png)
+![Companion AI chat-bubble interface concept (AI-generated; conversation is fictional)](screenshots/companion-chat.png)
 
-  ## Technology
+## Technology
 
 The applications use TypeScript, LIFF, Fastify, React and administrative / family-facing web clients. Realtime communication uses WebSocket; the AI layer includes STT, LLM, TTS, agent tools and knowledge retrieval; PostgreSQL, Redis and Docker support the runtime.
 
