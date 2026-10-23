@@ -44,17 +44,25 @@ BOM 不只是顯示父子樹狀關係，展開結果會影響工單材料、需�
 - [製造流程](diagrams/manufacturing-flow.svg)
 - [Mermaid 原始圖](diagrams/system-architecture.mmd)
 
-## 畫面展示
+## 介面示意
 
-以下畫面只展示功能邊界，已移除品牌、租戶、內部編號與其他識別資訊。
+以下為依專案描述製作的 AI 生成介面示意圖，不是實際產品截圖或交付驗收證據。圖中品牌、租戶、資料與識別資訊皆為虛構；畫面不代表所有功能均已實作或上線。
 
-![POS 銷售作業](screenshots/pos-sales-screen.png)
+![POS 銷售作業介面示意（AI 生成）](screenshots/pos-sales-screen.png)
 
-![ERP 商品與庫存](screenshots/erp-product-detail.png)
+![ERP 商品與庫存介面示意（AI 生成）](screenshots/erp-product-detail.png)
 
-![ERP 庫存異動與成本](screenshots/erp-inventory-movements.png)
+![ERP 庫存總覽介面示意（AI 生成）](screenshots/erp-inventory.png)
 
-![CRM 儀表板與客戶分析](screenshots/crm-dashboard.png)
+![ERP 庫存異動介面示意（AI 生成）](screenshots/erp-inventory-movements.png)
+
+![ERP 成本追蹤介面示意（AI 生成）](screenshots/erp-cost-tracking.png)
+
+![CRM 儀表板介面示意（AI 生成）](screenshots/crm-dashboard.png)
+
+![CRM 客戶資料介面示意（AI 生成）](screenshots/crm-customers.png)
+
+![CRM 分析介面示意（AI 生成）](screenshots/crm-insights.png)
 
 ## 技術與外部整合
 

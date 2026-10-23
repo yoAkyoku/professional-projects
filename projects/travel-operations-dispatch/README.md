@@ -49,15 +49,15 @@ GPS 需要能反映司機最近的位置，但行程尚未開始或已結束時�
 - [GPS 追蹤流程](diagrams/gps-tracking.svg)
 - [授權範圍](diagrams/authorization-scope.svg)
 
-## 畫面展示
+## 介面示意
 
-以下畫面展示營運派車、AI 派車建議與司機位置追蹤；客戶、門市、司機與行程識別資訊已去識別化。
+以下為依專案描述製作的 AI 生成介面示意圖，不是實際產品截圖或交付驗收證據。客戶、門市、司機、行程與位置資料皆為虛構；畫面不代表所有功能均已實作或上線。
 
-![營運派車總覽](screenshots/dispatch-overview.png)
+![營運派車總覽介面示意（AI 生成）](screenshots/dispatch-overview.png)
 
-![AI 派車建議](screenshots/ai-dispatch-modal.png)
+![AI 派車建議介面示意（AI 生成，資料為虛構）](screenshots/ai-dispatch-modal.png)
 
-![司機 GPS 位置追蹤](screenshots/driver-gps-map.png)
+![司機 GPS 位置追蹤介面示意（AI 生成，位置為虛構）](screenshots/driver-gps-map.png)
 
 ## 技術與整合
 

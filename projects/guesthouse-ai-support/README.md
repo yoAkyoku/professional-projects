@@ -43,13 +43,13 @@ Agent 會依意圖進入 RAG、民宿資料工具或人工客服流程。當檢�
 - [多租戶模型](diagrams/multi-tenant-model.svg)
 - [Mermaid 原始圖](diagrams/system-architecture.mmd)
 
-## 畫面展示
+## 介面示意
 
-以下畫面保留 LINE 民宿客服的功能流程，房源名稱、帳號頭像與其他識別資訊已遮罩。
+以下為依專案描述製作的 AI 生成介面示意圖，不是實際產品截圖或交付驗收證據。房源、帳號、對話內容與其他資料皆為虛構；畫面不代表所有功能均已實作或上線。
 
-![房型列表與房間資訊](screenshots/room-list.png)
+![房型列表與房間資訊介面示意（AI 生成）](screenshots/room-list.png)
 
-![景點、交通與入住資訊回覆](screenshots/hospitality-line-reply.png)
+![景點、交通與入住資訊回覆介面示意（AI 生成，對話為虛構）](screenshots/hospitality-line-reply.png)
 
 ## 技術
 

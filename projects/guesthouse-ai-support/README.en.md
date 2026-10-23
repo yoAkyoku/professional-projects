@@ -43,13 +43,13 @@ The agent routes to RAG, guesthouse data tools or human support based on intent.
   - [Multi-tenant model](diagrams/multi-tenant-model.svg)
   - [Mermaid source](diagrams/system-architecture.mmd)
 
-  ## Screenshots
+## Interface concepts
 
-  These screenshots keep the LINE guesthouse-support workflow visible while masking the property avatar, names and other identifying information.
+These AI-generated interface concepts are based on the project description. They are not screenshots of the actual product or delivery evidence. Properties, accounts, conversations and other data shown are fictional; the images do not imply that every depicted feature has been implemented or shipped.
 
-  ![Room list and room details](screenshots/room-list.png)
+![Room list and room details interface concept (AI-generated)](screenshots/room-list.png)
 
-  ![Hospitality reply with attractions, transport and check-in information](screenshots/hospitality-line-reply.png)
+![Hospitality reply interface concept (AI-generated; fictional conversation)](screenshots/hospitality-line-reply.png)
 
   ## Technology
 

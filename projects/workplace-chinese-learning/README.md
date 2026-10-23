@@ -51,13 +51,13 @@
 - [內容匯入](diagrams/content-import.svg)
 - [Tenant / RBAC](diagrams/tenant-rbac.svg)
 
-## 畫面展示
+## 介面示意
 
-以下畫面展示學員首頁與情境課程；品牌、工廠識別與主要人物影像已去識別化。OCR 與語音辨識不列為本專案已完成能力。
+以下為依專案描述製作的 AI 生成介面示意圖，不是實際產品截圖或交付驗收證據。品牌、工廠、學員與課程資料皆為虛構；畫面不代表所有功能均已實作或上線。OCR 與語音辨識不列為本專案已完成能力。
 
-![學員首頁與每日學習](screenshots/learning-home.png)
+![學員首頁與每日學習介面示意（AI 生成）](screenshots/learning-home.png)
 
-![工廠情境課程與發音練習](screenshots/lesson-practice.png)
+![工廠情境課程與發音練習介面示意（AI 生成，內容為虛構）](screenshots/lesson-practice.png)
 
 ## 技術與整合
 

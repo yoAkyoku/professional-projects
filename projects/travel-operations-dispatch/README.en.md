@@ -49,15 +49,15 @@ The operations console, customer experience and driver app share backend service
   - [GPS tracking](diagrams/gps-tracking.svg)
   - [Authorization scope](diagrams/authorization-scope.svg)
 
-  ## Screenshots
+## Interface concepts
 
-  These screenshots show dispatch operations, AI-assisted assignment and driver location tracking. Customer, store, driver and trip identifiers have been de-identified.
+These AI-generated interface concepts are based on the project description. They are not screenshots of the actual product or delivery evidence. Customers, stores, drivers, trips and location data shown are fictional; the images do not imply that every depicted feature has been implemented or shipped.
 
-  ![Dispatch overview](screenshots/dispatch-overview.png)
+![Dispatch overview interface concept (AI-generated)](screenshots/dispatch-overview.png)
 
-  ![AI dispatch suggestion](screenshots/ai-dispatch-modal.png)
+![AI-assisted dispatch interface concept (AI-generated; fictional data)](screenshots/ai-dispatch-modal.png)
 
-  ![Driver GPS tracking](screenshots/driver-gps-map.png)
+![Driver GPS tracking interface concept (AI-generated; fictional locations)](screenshots/driver-gps-map.png)
 
   ## Technology and integrations
 

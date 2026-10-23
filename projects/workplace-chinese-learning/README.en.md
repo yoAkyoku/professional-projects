@@ -51,13 +51,13 @@ A vocabulary item can include Traditional Chinese, Vietnamese, pinyin, zhuyin, a
   - [Content import](diagrams/content-import.svg)
   - [Tenant and RBAC](diagrams/tenant-rbac.svg)
 
-  ## Screenshots
+## Interface concepts
 
-  These screenshots show the learner home and factory-scenario lesson. Branding, factory identifiers and the main foreground people have been de-identified. OCR and speech recognition were not implemented in this project.
+These AI-generated interface concepts are based on the project description. They are not screenshots of the actual product or delivery evidence. Branding, factories, learners and lesson data shown are fictional; the images do not imply that every depicted feature has been implemented or shipped. OCR and speech recognition were not implemented in this project.
 
-  ![Learner home and daily learning](screenshots/learning-home.png)
+![Learner home and daily learning interface concept (AI-generated)](screenshots/learning-home.png)
 
-  ![Factory-scenario lesson and pronunciation practice](screenshots/lesson-practice.png)
+![Factory-scenario lesson and pronunciation practice concept (AI-generated; fictional content)](screenshots/lesson-practice.png)
 
   ## Technology and integrations
 

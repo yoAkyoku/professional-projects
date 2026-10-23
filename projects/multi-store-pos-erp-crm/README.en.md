@@ -44,17 +44,25 @@ If every POS change waits for CRM, a temporary CRM failure becomes a store-opera
   - [Manufacturing flow](diagrams/manufacturing-flow.svg)
   - [Mermaid source](diagrams/system-architecture.mmd)
 
-  ## Screenshots
+## Interface concepts
 
-  These screenshots show selected functional boundaries only. Brand names, tenant identifiers, internal IDs and other identifying details have been removed.
+These AI-generated interface concepts are based on the project description. They are not screenshots of the actual product or delivery evidence. Brands, tenants, records and identifiers shown are fictional; the images do not imply that every depicted feature has been implemented or shipped.
 
-  ![POS sales operation](screenshots/pos-sales-screen.png)
+![POS sales operation interface concept (AI-generated)](screenshots/pos-sales-screen.png)
 
-  ![ERP product and inventory](screenshots/erp-product-detail.png)
+![ERP product and inventory interface concept (AI-generated)](screenshots/erp-product-detail.png)
 
-  ![ERP inventory movements and cost history](screenshots/erp-inventory-movements.png)
+![ERP inventory overview interface concept (AI-generated)](screenshots/erp-inventory.png)
 
-  ![CRM dashboard and customer analysis](screenshots/crm-dashboard.png)
+![ERP inventory movements interface concept (AI-generated)](screenshots/erp-inventory-movements.png)
+
+![ERP cost tracking interface concept (AI-generated)](screenshots/erp-cost-tracking.png)
+
+![CRM dashboard interface concept (AI-generated)](screenshots/crm-dashboard.png)
+
+![CRM customer records interface concept (AI-generated)](screenshots/crm-customers.png)
+
+![CRM analytics interface concept (AI-generated)](screenshots/crm-insights.png)
 
   ## Technology and integrations
 
