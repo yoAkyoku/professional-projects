@@ -14,7 +14,7 @@
 - 資料與領域模型
 - 以實際部署為導向的開發
 
-案例內容整理 **2026 年 3 月至 2026 年 9 月** 的商業開發工作。
+前五個企業工程案例整理 **2026 年 3 月至 2026 年 9 月** 的商業開發工作；網站系統案例依可核實範圍記錄，未推定專案期間。
 
 > 商業專案的原始碼與正式資料不公開。
 > 所有內容均已簡化、去識別化或使用重製資料。
@@ -28,6 +28,8 @@
 | 陪伴型 AI 語音與 Agent 平台 | Full-stack / AI Engineer | 即時語音、WebSocket、Agent Runtime |
 | 智慧旅運訂單與派車平台 | Full-stack Engineer | 訂單、派車、GPS、行動端 |
 | 工廠中文學習與企業管理平台 | Full-stack Engineer | 多租戶學習、在地化、匯入、Analytics |
+| Select Staycation 多站旅宿官網與 CMS | Full-stack Engineer | 多站內容、住宿篩選、詢問型預訂 |
+| Talk915TW 線上語言學習服務官網 | Full-stack Engineer | CMS、課程資訊、試聽與諮詢流程 |
 
 ## 精選案例
 
@@ -36,6 +38,20 @@
 - [陪伴型 AI 語音與 Agent 平台](projects/companion-ai-platform/README.md)
 - [智慧旅運訂單與派車平台](projects/travel-operations-dispatch/README.md)
 - [工廠中文學習與企業管理平台](projects/workplace-chinese-learning/README.md)
+
+## 網站系統案例
+
+### Select Staycation 多站旅宿官網與內容管理
+
+為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。公開網站連至 Villa Samaya Awan。
+
+[案例研究](./projects/select-staycation/README.md) · [公開網站](https://selectstaycation.com)
+
+### Talk915TW 線上語言學習服務官網
+
+提供課程資訊、試聽與諮詢入口，並由 CMS 管理網站內容及文章。
+
+[案例研究](./projects/talk915tw/README.md) · [公開網站](https://www.talk915tw.com)
 
 ## 個人作品
 
