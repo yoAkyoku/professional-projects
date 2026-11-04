@@ -14,7 +14,7 @@ This repository focuses on selected features and engineering decisions rather th
 - Data and domain modeling
 - Production-oriented development
 
-The case studies cover commercial development work from **March 2026 to September 2026**.
+The five enterprise-platform case studies cover commercial development work from **March 2026 to September 2026**. Website and CMS cases are documented by verified scope without inferring project dates.
 
 > Commercial source code and production data are not publicly available.
 > All materials have been simplified and anonymized for portfolio presentation.
@@ -28,6 +28,8 @@ The case studies cover commercial development work from **March 2026 to Septembe
 | Companion AI Voice & Agent Platform | Full-stack / AI Engineer | Realtime Voice, WebSocket, Agent Runtime |
 | Travel Operations & Dispatch Platform | Full-stack Engineer | Orders, Dispatch, GPS, Mobile |
 | Workplace Chinese Learning Platform | Full-stack Engineer | Multi-tenancy, Localization, Imports, Analytics |
+| Select Staycation Multi-site Hospitality Website and CMS | Full-stack Engineer | Multi-site Content, Stay Filters, Inquiry Booking |
+| Talk915TW Online Language Learning Service Website | Full-stack Engineer | CMS, Course Content, Trial and Consultation Flow |
 
 ### Multi-store POS / ERP / CRM Integration Platform
 
@@ -78,6 +80,20 @@ Next.js · NestJS · PostgreSQL · Learning Platform · Analytics ·
 Multilingual Content · Import Workflows
 
 [View Case Study](./projects/workplace-chinese-learning/README.en.md)
+
+## Website & CMS Cases
+
+### Select Staycation Multi-site Hospitality Website and CMS
+
+A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. The public link points to Villa Samaya Awan.
+
+[View Case Study](./projects/select-staycation/README.en.md) · [Live Site](https://selectstaycation.com)
+
+### Talk915TW Online Language Learning Service Website
+
+A Taiwan-facing service website with course information, trial and consultation entry points, and CMS-managed content.
+
+[View Case Study](./projects/talk915tw/README.en.md) · [Live Site](https://www.talk915tw.com)
 
 ## Independent Project
 
