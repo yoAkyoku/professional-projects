@@ -2,6 +2,8 @@
 
 [English](README.en.md) · [公開網站](https://www.talk915tw.com)
 
+![Talk915TW portfolio cover](../../assets/project-covers/talk915tw-cover.png)
+
 **專案類型：** 客戶專案／服務網站  
 **角色：** Full-stack Engineer  
 **重點：** 課程內容呈現 · CMS 後台 · 試聽與諮詢流程 · 官網管理

@@ -2,6 +2,8 @@
 
 [English](README.en.md) · [公開網站：Villa Samaya Awan](https://selectstaycation.com)
 
+![Select Staycation portfolio cover](../../assets/project-covers/select-staycation-cover.png)
+
 **專案類型：** 客戶專案／旅宿網站與 CMS  
 **角色：** Full-stack Engineer  
 **重點：** 多站內容管理 · 住宿篩選 · 中英管理介面 · 詢問型預訂

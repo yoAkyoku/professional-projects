@@ -2,6 +2,8 @@
 
 [繁體中文](README.md) · [Live site: Villa Samaya Awan](https://selectstaycation.com)
 
+![Select Staycation portfolio cover](../../assets/project-covers/select-staycation-cover.png)
+
 **Type:** Client project / hospitality website and CMS  
 **Role:** Full-stack Engineer  
 **Focus:** Multi-site content management · Stay filters · Chinese and English admin UI · Inquiry-based booking

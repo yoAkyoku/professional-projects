@@ -2,6 +2,8 @@
 
 [繁體中文](README.md) · [Live site](https://www.talk915tw.com)
 
+![Talk915TW portfolio cover](../../assets/project-covers/talk915tw-cover.png)
+
 **Type:** Client project / service website  
 **Role:** Full-stack Engineer  
 **Focus:** Course presentation · CMS admin · Trial and consultation flow · Website operations
