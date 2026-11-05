@@ -43,7 +43,7 @@
 
 ### Select Staycation 多站旅宿官網與內容管理
 
-為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。公開網站連至 Villa Samaya Awan。
+為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。公開網站展示品牌、住宿與旅宿服務資訊。
 
 [案例研究](./projects/select-staycation/README.md) · [公開網站](https://selectstaycation.com)
 
@@ -51,7 +51,7 @@
 
 提供課程資訊、試聽與諮詢入口，並由 CMS 管理網站內容及文章。
 
-[案例研究](./projects/talk915tw/README.md) · [公開網站](https://www.talk915tw.com)
+[案例研究](./projects/talk915tw/README.md) · [公開網站](https://talk915tw.com)
 
 ## 個人作品
 

@@ -1,6 +1,6 @@
 # Talk915TW 線上語言學習服務官網
 
-[English](README.en.md) · [公開網站](https://www.talk915tw.com)
+[English](README.en.md) · [公開網站](https://talk915tw.com)
 
 ![Talk915TW portfolio cover](../../assets/project-covers/talk915tw-cover.png)
 
@@ -11,6 +11,22 @@
 ## 專案概覽
 
 Talk915TW 面向台灣學員介紹線上語言學習服務。公開網站整理課程、師資、學員心得、報名步驟、方案資訊與常見問題，並引導訪客提交試聽或課程諮詢需求。本案例描述品牌推廣與諮詢網站，不涵蓋外部學員上課平台的內部功能。
+
+## 官網畫面
+
+以下截圖呈現 Talk915TW 的服務介紹、試聽入口與課程分類。
+
+### 1. 服務首頁與免費試聽入口
+
+首頁以線上語言學習情境、服務說明及明確按鈕，引導訪客了解課程或申請試聽。
+
+![Talk915TW 服務首頁與免費試聽入口](screenshots/01-home-and-trial.png)
+
+### 2. 課程分類與資訊卡片
+
+以卡片整理兒童英語、成人英語與第二外語等課程，提供課程簡介及進一步了解的入口。
+
+![Talk915TW 課程分類與資訊卡片](screenshots/02-course-categories.png)
 
 ## 我完成的範圍
 

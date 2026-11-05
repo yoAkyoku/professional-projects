@@ -85,7 +85,7 @@ Multilingual Content · Import Workflows
 
 ### Select Staycation Multi-site Hospitality Website and CMS
 
-A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. The public link points to Villa Samaya Awan.
+A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. The public website presents the brand, stays and hospitality services.
 
 [View Case Study](./projects/select-staycation/README.en.md) · [Live Site](https://selectstaycation.com)
 
@@ -93,7 +93,7 @@ A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based
 
 A Taiwan-facing service website with course information, trial and consultation entry points, and CMS-managed content.
 
-[View Case Study](./projects/talk915tw/README.en.md) · [Live Site](https://www.talk915tw.com)
+[View Case Study](./projects/talk915tw/README.en.md) · [Live Site](https://talk915tw.com)
 
 ## Independent Project
 
