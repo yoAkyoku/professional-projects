@@ -1,6 +1,6 @@
 # Select Staycation Multi-site Hospitality Website and CMS
 
-[繁體中文](README.md) · [Live site: Select Staycation](https://selectstaycation.com)
+[繁體中文](README.md) · [Showcase: Slowfield Stays](https://github.com/yoAkyoku/slowfield-stays)
 
 ![Select Staycation portfolio cover](../../assets/project-covers/select-staycation-cover.png)
 
@@ -12,9 +12,19 @@
 
 A website and content management system built to support multiple hospitality sites. The public website presents Select Staycation's brand, stays and hospitality services. The management platform supports site setup and day-to-day editing of stays, pages, media and marketing content.
 
+## Current showcase
+
+The original client site has closed, so there is no live site to visit. The same system is now public as **Slowfield Stays**, a fictional brand with demo content and images.
+
+- [Source and screenshots](https://github.com/yoAkyoku/slowfield-stays)
+- [Public-site walkthrough video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) (51 pages, about 4 minutes)
+- [Admin walkthrough video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
+
+[![Slowfield Stays cover](https://github.com/yoAkyoku/slowfield-stays/raw/main/docs/screenshots/cover.jpg)](https://github.com/yoAkyoku/slowfield-stays)
+
 ## Website screenshots
 
-These screenshots show Select Staycation's homepage, stay filters, property imagery and dining services.
+These screenshots were taken before the original client site closed. They show Select Staycation's homepage, stay filters, property imagery and dining services.
 
 ### 1. Brand homepage and booking entry points
 
@@ -65,4 +75,4 @@ Next.js · TypeScript · React · FastAPI · SQLAlchemy · PostgreSQL · Alembic
 
 ## Public scope
 
-The public link and screenshots show the Select Staycation website. This case study describes selected multi-site CMS and inquiry features; it does not include production source code, databases, credentials, secrets or guest information.
+The screenshots show the Select Staycation website before it closed. The showcase link and videos are of Slowfield Stays, a fictional brand. This case study describes selected multi-site CMS and inquiry features; it does not include production source code, databases, credentials, secrets or guest information.

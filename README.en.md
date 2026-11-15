@@ -85,9 +85,9 @@ Multilingual Content · Import Workflows
 
 ### Select Staycation Multi-site Hospitality Website and CMS
 
-A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. The public website presents the brand, stays and hospitality services.
+A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. The original client site has closed. The same system is now shown as Slowfield Stays, a fictional brand, with walkthrough videos instead of a live site.
 
-[View Case Study](./projects/select-staycation/README.en.md) · [Live Site](https://selectstaycation.com)
+[View Case Study](./projects/select-staycation/README.en.md) · [Showcase source](https://github.com/yoAkyoku/slowfield-stays) · [Public-site video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) · [Admin video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
 
 ### Talk915TW Online Language Learning Service Website
 

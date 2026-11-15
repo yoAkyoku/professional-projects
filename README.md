@@ -43,9 +43,9 @@
 
 ### Select Staycation 多站旅宿官網與內容管理
 
-為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。公開網站展示品牌、住宿與旅宿服務資訊。
+為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。原客戶網站已關閉；同一套系統現以虛構品牌 Slowfield Stays 公開展示，沒有線上站台，以導覽影片呈現。
 
-[案例研究](./projects/select-staycation/README.md) · [公開網站](https://selectstaycation.com)
+[案例研究](./projects/select-staycation/README.md) · [展示版原始碼](https://github.com/yoAkyoku/slowfield-stays) · [前台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) · [後台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
 
 ### Talk915TW 線上語言學習服務官網
 

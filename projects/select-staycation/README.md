@@ -1,6 +1,6 @@
 # Select Staycation 多站旅宿官網與內容管理系統
 
-[English](README.en.md) · [公開網站：Select Staycation](https://selectstaycation.com)
+[English](README.en.md) · [展示版：Slowfield Stays](https://github.com/yoAkyoku/slowfield-stays)
 
 ![Select Staycation portfolio cover](../../assets/project-covers/select-staycation-cover.png)
 
@@ -12,9 +12,19 @@
 
 為旅宿品牌建立可管理多個站點的網站與內容管理系統。公開官網呈現 Select Staycation 的品牌、住宿與服務資訊；管理平台可建立品牌站點，並維護住宿、頁面、媒體與行銷內容。
 
+## 目前的展示版
+
+原客戶網站已關閉，因此沒有可瀏覽的線上站台。同一套系統現以虛構品牌 **Slowfield Stays 慢域旅宿** 公開，內容與圖片皆為示範用途。
+
+- [原始碼與截圖](https://github.com/yoAkyoku/slowfield-stays)
+- [前台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4)（51 頁，約 4 分鐘）
+- [後台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
+
+[![Slowfield Stays 封面](https://github.com/yoAkyoku/slowfield-stays/raw/main/docs/screenshots/cover.jpg)](https://github.com/yoAkyoku/slowfield-stays)
+
 ## 官網畫面
 
-以下截圖呈現 Select Staycation 的品牌首頁、住宿篩選、空間展示與餐宴服務。
+以下截圖為原客戶網站關閉前的畫面，呈現 Select Staycation 的品牌首頁、住宿篩選、空間展示與餐宴服務。
 
 ### 1. 品牌首頁與預約入口
 
@@ -65,4 +75,4 @@ Next.js · TypeScript · React · FastAPI · SQLAlchemy · PostgreSQL · Alembic
 
 ## 公開範圍
 
-公開連結與截圖展示 Select Staycation 官網前台。本案例說明多站 CMS 與詢問流程的功能範圍，不包含正式環境原始碼、資料庫、帳號、密鑰或住客資料。
+截圖展示 Select Staycation 官網關閉前的前台；展示版連結與影片為虛構品牌 Slowfield Stays。本案例說明多站 CMS 與詢問流程的功能範圍，不包含正式環境原始碼、資料庫、帳號、密鑰或住客資料。
