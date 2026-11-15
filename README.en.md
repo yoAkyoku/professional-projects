@@ -28,7 +28,7 @@ The five enterprise-platform case studies cover commercial development work from
 | Companion AI Voice & Agent Platform | Full-stack / AI Engineer | Realtime Voice, WebSocket, Agent Runtime |
 | Travel Operations & Dispatch Platform | Full-stack Engineer | Orders, Dispatch, GPS, Mobile |
 | Workplace Chinese Learning Platform | Full-stack Engineer | Multi-tenancy, Localization, Imports, Analytics |
-| Select Staycation Multi-site Hospitality Website and CMS | Full-stack Engineer | Multi-site Content, Stay Filters, Inquiry Booking |
+| Slowfield Stays Multi-site Hospitality Website and CMS | Full-stack Engineer | Multi-site Content, Stay Filters, Inquiry Booking |
 | Talk915TW Online Language Learning Service Website | Full-stack Engineer | CMS, Course Content, Trial and Consultation Flow |
 
 ### Multi-store POS / ERP / CRM Integration Platform
@@ -83,11 +83,11 @@ Multilingual Content · Import Workflows
 
 ## Website & CMS Cases
 
-### Select Staycation Multi-site Hospitality Website and CMS
+### Slowfield Stays Multi-site Hospitality Website and CMS
 
-A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. The original client site has closed. The same system is now shown as Slowfield Stays, a fictional brand, with walkthrough videos instead of a live site.
+A multi-site CMS for hospitality brands, with stay browsing and an inquiry-based booking flow. Built as a client project and now shown as Slowfield Stays, a fictional brand. There is no live site, so the source and walkthrough videos show it instead.
 
-[View Case Study](./projects/select-staycation/README.en.md) · [Showcase source](https://github.com/yoAkyoku/slowfield-stays) · [Public-site video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) · [Admin video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
+[View Case Study](./projects/slowfield-stays/README.en.md) · [Showcase source](https://github.com/yoAkyoku/slowfield-stays) · [Public-site video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) · [Admin video](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
 
 ### Talk915TW Online Language Learning Service Website
 

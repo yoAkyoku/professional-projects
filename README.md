@@ -28,7 +28,7 @@
 | 陪伴型 AI 語音與 Agent 平台 | Full-stack / AI Engineer | 即時語音、WebSocket、Agent Runtime |
 | 智慧旅運訂單與派車平台 | Full-stack Engineer | 訂單、派車、GPS、行動端 |
 | 工廠中文學習與企業管理平台 | Full-stack Engineer | 多租戶學習、在地化、匯入、Analytics |
-| Select Staycation 多站旅宿官網與 CMS | Full-stack Engineer | 多站內容、住宿篩選、詢問型預訂 |
+| Slowfield Stays 多站旅宿官網與 CMS | Full-stack Engineer | 多站內容、住宿篩選、詢問型預訂 |
 | Talk915TW 線上語言學習服務官網 | Full-stack Engineer | CMS、課程資訊、試聽與諮詢流程 |
 
 ## 精選案例
@@ -41,11 +41,11 @@
 
 ## 網站系統案例
 
-### Select Staycation 多站旅宿官網與內容管理
+### Slowfield Stays 多站旅宿官網與內容管理
 
-為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。原客戶網站已關閉；同一套系統現以虛構品牌 Slowfield Stays 公開展示，沒有線上站台，以導覽影片呈現。
+為旅宿品牌建立多站 CMS、住宿瀏覽與詢問型預訂流程。原為客戶專案，現以虛構品牌 Slowfield Stays 公開展示；沒有線上站台，以原始碼與導覽影片呈現。
 
-[案例研究](./projects/select-staycation/README.md) · [展示版原始碼](https://github.com/yoAkyoku/slowfield-stays) · [前台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) · [後台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
+[案例研究](./projects/slowfield-stays/README.md) · [展示版原始碼](https://github.com/yoAkyoku/slowfield-stays) · [前台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/front-walkthrough.mp4) · [後台導覽影片](https://github.com/yoAkyoku/slowfield-stays/blob/main/docs/videos/admin-walkthrough.mp4)
 
 ### Talk915TW 線上語言學習服務官網
 
